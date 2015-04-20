@@ -2,7 +2,9 @@
 
 \begin{document}
 
-\section*{OSEMN Assignment - Java v/s JavaScript}
+\section*{\centering{OSEMN Assignment - Java v/s JavaScript}}
+\subsection*{\centering{April 20, 2015}}
+
 \subsection*{Overview}
 \textbf{Github} is a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. Unlike Git, which is strictly a command-line tool, GitHub provides a web-based graphical interface and desktop as well as mobile integration. It also provides access control and several collaboration features such as wikis, task management, and bug tracking and feature requests for every project.
 \smallskip
@@ -43,7 +45,7 @@ In addition to source code, GitHub supports the following formats and features:
 \subsection*{Data}
 To gather data from github, I used the Github API ‘https://api.github.com’. Parameters can be passed to this as queries. The following code describes how I derived my data:
 
-<<chunk1, echo=TRUE>>=
+<<chunk1, echo=TRUE, tidy=TRUE>>=
 
 library(jsonlite)
 library (plyr)
@@ -63,22 +65,6 @@ data_json_Javascript<-jsonlite::fromJSON(URLjavascript)
 data_dataframe_Java<-as.data.frame(data_json_Java)
 data_dataframe_Javascript<-as.data.frame(data_json_Javascript)
 
-class(data_dataframe_Java)
-str(data_dataframe_Java)
-summary(data_dataframe_Java)
-
-class(data_dataframe_Javascript)
-str(data_dataframe_Javascript)
-summary(data_dataframe_Javascript)
-
-@
-
-\subsubsection*{Results}
-So, we have tables for repositories created in Java and in JavaScript. Seeing he values in the tables, we can verify the language in which the repository was created. \par
-The number of repositories for each, Java and JavaScript can be calculated as follows:
-
-<<chunk2, echo=TRUE>>=
-
 njava<-data_dataframe_Java[1,1]
 njavascript<-data_dataframe_Javascript[1,1]
 
@@ -89,8 +75,22 @@ repositories<-c(get("njava"),get("njavascript"))
 
 graph<-cbind(language,repositories)
 graph_data_frame<-as.data.frame(graph)
+@
+
+\subsection*{Results}
+So, we have tables for repositories created in Java and in JavaScript. Seeing he values in the tables, we can verify the language in which the repository was created. \par
+The number of repositories for each, Java and JavaScript can be calculated as follows:
+
+<<chunk2, echo=TRUE>>=
+
+
+
+class(graph_data_frame)
+str(graph_data_frame)
+summary(graph_data_frame)
 
 graph_data_frame
+write.csv(graph_data_frame,file="OSEMNassignment.csv")
 
 @
 
@@ -102,8 +102,15 @@ Having a table with language on X-axis and number of repositories for each langu
 <<chunk3,echo=TRUE>>=
 
 library(ggplot2)
+library(scales)
+
 ggplot2::ggplot(graph_data_frame,aes(x=language,y=repositories,fill=language))+
         geom_bar(stat="identity")
+line<-ggplot2::ggplot(graph_data_frame,aes(x=language,y=repositories,group=1))+
+       geom_line(color="blue", linetype="dotted")+
+        geom_point(fill="white", color="blue", shape=21, size=4)
+
+line
 
 @
 

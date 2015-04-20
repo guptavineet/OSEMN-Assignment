@@ -51,7 +51,9 @@
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 
-\section*{OSEMN Assignment - Java v/s JavaScript}
+\section*{\centering{OSEMN Assignment - Java v/s JavaScript}}
+\subsection*{\centering{April 20, 2015}}
+
 \subsection*{Overview}
 \textbf{Github} is a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. Unlike Git, which is strictly a command-line tool, GitHub provides a web-based graphical interface and desktop as well as mobile integration. It also provides access control and several collaboration features such as wikis, task management, and bug tracking and feature requests for every project.
 \smallskip
@@ -100,594 +102,76 @@ To gather data from github, I used the Github API ‘https://api.github.com’. 
 
 
 {\ttfamily\noindent\itshape\color{messagecolor}{\#\# \\\#\# Attaching package: 'jsonlite'\\\#\# \\\#\# The following object is masked from 'package:utils':\\\#\# \\\#\#\ \ \ \  View}}\begin{alltt}
-\hlkwd{library} \hlstd{(plyr)}
-\hlkwd{library} \hlstd{(ggplot2)}
+\hlkwd{library}\hlstd{(plyr)}
+\hlkwd{library}\hlstd{(ggplot2)}
 
-\hlstd{url}  \hlkwb{<-} \hlstr{'https://api.github.com/'}                 \hlcom{# the GitHub API}
-\hlstd{path} \hlkwb{<-} \hlstr{'search/repositories'}                     \hlcom{# Repositories path}
-\hlstd{searchJava} \hlkwb{<-} \hlstr{'?q=language:Java'}                  \hlcom{# And language = Java}
-\hlstd{searchJavaScript} \hlkwb{<-} \hlstr{'?q=language:JavaScript'}      \hlcom{# Language = JavaScript}
+\hlstd{url} \hlkwb{<-} \hlstr{"https://api.github.com/"}  \hlcom{# the GitHub API}
+\hlstd{path} \hlkwb{<-} \hlstr{"search/repositories"}  \hlcom{# Repositories path}
+\hlstd{searchJava} \hlkwb{<-} \hlstr{"?q=language:Java"}  \hlcom{# And language = Java}
+\hlstd{searchJavaScript} \hlkwb{<-} \hlstr{"?q=language:JavaScript"}  \hlcom{# Language = JavaScript}
 
-\hlstd{URLjava}\hlkwb{<-}\hlkwd{paste0}\hlstd{(url,path,searchJava)}
-\hlstd{URLjavascript}\hlkwb{<-}\hlkwd{paste0}\hlstd{(url,path,searchJavaScript)}
+\hlstd{URLjava} \hlkwb{<-} \hlkwd{paste0}\hlstd{(url, path, searchJava)}
+\hlstd{URLjavascript} \hlkwb{<-} \hlkwd{paste0}\hlstd{(url, path, searchJavaScript)}
 
-\hlstd{data_json_Java}\hlkwb{<-}\hlstd{jsonlite}\hlopt{::}\hlkwd{fromJSON}\hlstd{(URLjava)}
-\hlstd{data_json_Javascript}\hlkwb{<-}\hlstd{jsonlite}\hlopt{::}\hlkwd{fromJSON}\hlstd{(URLjavascript)}
+\hlstd{data_json_Java} \hlkwb{<-} \hlstd{jsonlite}\hlopt{::}\hlkwd{fromJSON}\hlstd{(URLjava)}
+\hlstd{data_json_Javascript} \hlkwb{<-} \hlstd{jsonlite}\hlopt{::}\hlkwd{fromJSON}\hlstd{(URLjavascript)}
 
-\hlstd{data_dataframe_Java}\hlkwb{<-}\hlkwd{as.data.frame}\hlstd{(data_json_Java)}
-\hlstd{data_dataframe_Javascript}\hlkwb{<-}\hlkwd{as.data.frame}\hlstd{(data_json_Javascript)}
+\hlstd{data_dataframe_Java} \hlkwb{<-} \hlkwd{as.data.frame}\hlstd{(data_json_Java)}
+\hlstd{data_dataframe_Javascript} \hlkwb{<-} \hlkwd{as.data.frame}\hlstd{(data_json_Javascript)}
 
-\hlkwd{class}\hlstd{(data_dataframe_Java)}
+\hlstd{njava} \hlkwb{<-} \hlstd{data_dataframe_Java[}\hlnum{1}\hlstd{,} \hlnum{1}\hlstd{]}
+\hlstd{njavascript} \hlkwb{<-} \hlstd{data_dataframe_Javascript[}\hlnum{1}\hlstd{,} \hlnum{1}\hlstd{]}
+
+\hlcom{# Creating a table with these values:}
+
+\hlstd{language} \hlkwb{<-} \hlkwd{c}\hlstd{(}\hlstr{"Java"}\hlstd{,} \hlstr{"JavaScript"}\hlstd{)}
+\hlstd{repositories} \hlkwb{<-} \hlkwd{c}\hlstd{(}\hlkwd{get}\hlstd{(}\hlstr{"njava"}\hlstd{),} \hlkwd{get}\hlstd{(}\hlstr{"njavascript"}\hlstd{))}
+
+\hlstd{graph} \hlkwb{<-} \hlkwd{cbind}\hlstd{(language, repositories)}
+\hlstd{graph_data_frame} \hlkwb{<-} \hlkwd{as.data.frame}\hlstd{(graph)}
 \end{alltt}
-\begin{verbatim}
-## [1] "data.frame"
-\end{verbatim}
-\begin{alltt}
-\hlkwd{str}\hlstd{(data_dataframe_Java)}
-\end{alltt}
-\begin{verbatim}
-## 'data.frame':	30 obs. of  70 variables:
-##  $ total_count            : int  1038032 1038032 1038032 1038032 1038032 1038032 1038032 1038032 1038032 1038032 ...
-##  $ incomplete_results     : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
-##  $ items.id               : int  507775 2404027 2862290 4839957 1451060 18347476 2349728 5373551 1388245 10057936 ...
-##  $ items.name             : chr  "elasticsearch" "storm" "Android-Universal-Image-Loader" "SlidingMenu" ...
-##  $ items.full_name        : chr  "elastic/elasticsearch" "nathanmarz/storm" "nostra13/Android-Universal-Image-Loader" "jfeinstein10/SlidingMenu" ...
-##  $ items.owner            :'data.frame':	30 obs. of  17 variables:
-##   ..$ login              : chr  "elastic" "nathanmarz" "nostra13" "jfeinstein10" ...
-##   ..$ id                 : int  6764390 131416 1223348 1269143 66577 1342004 11877067 509841 104009 82592 ...
-##   ..$ avatar_url         : chr  "https://avatars.githubusercontent.com/u/6764390?v=3" "https://avatars.githubusercontent.com/u/131416?v=3" "https://avatars.githubusercontent.com/u/1223348?v=3" "https://avatars.githubusercontent.com/u/1269143?v=3" ...
-##   ..$ gravatar_id        : chr  "" "" "" "" ...
-##   ..$ url                : chr  "https://api.github.com/users/elastic" "https://api.github.com/users/nathanmarz" "https://api.github.com/users/nostra13" "https://api.github.com/users/jfeinstein10" ...
-##   ..$ html_url           : chr  "https://github.com/elastic" "https://github.com/nathanmarz" "https://github.com/nostra13" "https://github.com/jfeinstein10" ...
-##   ..$ followers_url      : chr  "https://api.github.com/users/elastic/followers" "https://api.github.com/users/nathanmarz/followers" "https://api.github.com/users/nostra13/followers" "https://api.github.com/users/jfeinstein10/followers" ...
-##   ..$ following_url      : chr  "https://api.github.com/users/elastic/following{/other_user}" "https://api.github.com/users/nathanmarz/following{/other_user}" "https://api.github.com/users/nostra13/following{/other_user}" "https://api.github.com/users/jfeinstein10/following{/other_user}" ...
-##   ..$ gists_url          : chr  "https://api.github.com/users/elastic/gists{/gist_id}" "https://api.github.com/users/nathanmarz/gists{/gist_id}" "https://api.github.com/users/nostra13/gists{/gist_id}" "https://api.github.com/users/jfeinstein10/gists{/gist_id}" ...
-##   ..$ starred_url        : chr  "https://api.github.com/users/elastic/starred{/owner}{/repo}" "https://api.github.com/users/nathanmarz/starred{/owner}{/repo}" "https://api.github.com/users/nostra13/starred{/owner}{/repo}" "https://api.github.com/users/jfeinstein10/starred{/owner}{/repo}" ...
-##   ..$ subscriptions_url  : chr  "https://api.github.com/users/elastic/subscriptions" "https://api.github.com/users/nathanmarz/subscriptions" "https://api.github.com/users/nostra13/subscriptions" "https://api.github.com/users/jfeinstein10/subscriptions" ...
-##   ..$ organizations_url  : chr  "https://api.github.com/users/elastic/orgs" "https://api.github.com/users/nathanmarz/orgs" "https://api.github.com/users/nostra13/orgs" "https://api.github.com/users/jfeinstein10/orgs" ...
-##   ..$ repos_url          : chr  "https://api.github.com/users/elastic/repos" "https://api.github.com/users/nathanmarz/repos" "https://api.github.com/users/nostra13/repos" "https://api.github.com/users/jfeinstein10/repos" ...
-##   ..$ events_url         : chr  "https://api.github.com/users/elastic/events{/privacy}" "https://api.github.com/users/nathanmarz/events{/privacy}" "https://api.github.com/users/nostra13/events{/privacy}" "https://api.github.com/users/jfeinstein10/events{/privacy}" ...
-##   ..$ received_events_url: chr  "https://api.github.com/users/elastic/received_events" "https://api.github.com/users/nathanmarz/received_events" "https://api.github.com/users/nostra13/received_events" "https://api.github.com/users/jfeinstein10/received_events" ...
-##   ..$ type               : chr  "Organization" "User" "User" "User" ...
-##   ..$ site_admin         : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
-##  $ items.private          : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
-##  $ items.html_url         : chr  "https://github.com/elastic/elasticsearch" "https://github.com/nathanmarz/storm" "https://github.com/nostra13/Android-Universal-Image-Loader" "https://github.com/jfeinstein10/SlidingMenu" ...
-##  $ items.description      : chr  "Open Source, Distributed, RESTful Search Engine" "Distributed and fault-tolerant realtime computation: stream processing, continuous computation, distributed RPC, and more" "Powerful and flexible library for loading, caching and displaying images on Android." "An Android library that allows you to easily create applications with slide-in menus. You may use it in your Android apps provi"| __truncated__ ...
-##  $ items.fork             : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
-##  $ items.url              : chr  "https://api.github.com/repos/elastic/elasticsearch" "https://api.github.com/repos/nathanmarz/storm" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader" "https://api.github.com/repos/jfeinstein10/SlidingMenu" ...
-##  $ items.forks_url        : chr  "https://api.github.com/repos/elastic/elasticsearch/forks" "https://api.github.com/repos/nathanmarz/storm/forks" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/forks" "https://api.github.com/repos/jfeinstein10/SlidingMenu/forks" ...
-##  $ items.keys_url         : chr  "https://api.github.com/repos/elastic/elasticsearch/keys{/key_id}" "https://api.github.com/repos/nathanmarz/storm/keys{/key_id}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/keys{/key_id}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/keys{/key_id}" ...
-##  $ items.collaborators_url: chr  "https://api.github.com/repos/elastic/elasticsearch/collaborators{/collaborator}" "https://api.github.com/repos/nathanmarz/storm/collaborators{/collaborator}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/collaborators{/collaborator}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/collaborators{/collaborator}" ...
-##  $ items.teams_url        : chr  "https://api.github.com/repos/elastic/elasticsearch/teams" "https://api.github.com/repos/nathanmarz/storm/teams" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/teams" "https://api.github.com/repos/jfeinstein10/SlidingMenu/teams" ...
-##  $ items.hooks_url        : chr  "https://api.github.com/repos/elastic/elasticsearch/hooks" "https://api.github.com/repos/nathanmarz/storm/hooks" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/hooks" "https://api.github.com/repos/jfeinstein10/SlidingMenu/hooks" ...
-##  $ items.issue_events_url : chr  "https://api.github.com/repos/elastic/elasticsearch/issues/events{/number}" "https://api.github.com/repos/nathanmarz/storm/issues/events{/number}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/issues/events{/number}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/issues/events{/number}" ...
-##  $ items.events_url       : chr  "https://api.github.com/repos/elastic/elasticsearch/events" "https://api.github.com/repos/nathanmarz/storm/events" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/events" "https://api.github.com/repos/jfeinstein10/SlidingMenu/events" ...
-##  $ items.assignees_url    : chr  "https://api.github.com/repos/elastic/elasticsearch/assignees{/user}" "https://api.github.com/repos/nathanmarz/storm/assignees{/user}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/assignees{/user}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/assignees{/user}" ...
-##  $ items.branches_url     : chr  "https://api.github.com/repos/elastic/elasticsearch/branches{/branch}" "https://api.github.com/repos/nathanmarz/storm/branches{/branch}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/branches{/branch}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/branches{/branch}" ...
-##  $ items.tags_url         : chr  "https://api.github.com/repos/elastic/elasticsearch/tags" "https://api.github.com/repos/nathanmarz/storm/tags" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/tags" "https://api.github.com/repos/jfeinstein10/SlidingMenu/tags" ...
-##  $ items.blobs_url        : chr  "https://api.github.com/repos/elastic/elasticsearch/git/blobs{/sha}" "https://api.github.com/repos/nathanmarz/storm/git/blobs{/sha}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/git/blobs{/sha}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/git/blobs{/sha}" ...
-##  $ items.git_tags_url     : chr  "https://api.github.com/repos/elastic/elasticsearch/git/tags{/sha}" "https://api.github.com/repos/nathanmarz/storm/git/tags{/sha}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/git/tags{/sha}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/git/tags{/sha}" ...
-##  $ items.git_refs_url     : chr  "https://api.github.com/repos/elastic/elasticsearch/git/refs{/sha}" "https://api.github.com/repos/nathanmarz/storm/git/refs{/sha}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/git/refs{/sha}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/git/refs{/sha}" ...
-##  $ items.trees_url        : chr  "https://api.github.com/repos/elastic/elasticsearch/git/trees{/sha}" "https://api.github.com/repos/nathanmarz/storm/git/trees{/sha}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/git/trees{/sha}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/git/trees{/sha}" ...
-##  $ items.statuses_url     : chr  "https://api.github.com/repos/elastic/elasticsearch/statuses/{sha}" "https://api.github.com/repos/nathanmarz/storm/statuses/{sha}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/statuses/{sha}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/statuses/{sha}" ...
-##  $ items.languages_url    : chr  "https://api.github.com/repos/elastic/elasticsearch/languages" "https://api.github.com/repos/nathanmarz/storm/languages" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/languages" "https://api.github.com/repos/jfeinstein10/SlidingMenu/languages" ...
-##  $ items.stargazers_url   : chr  "https://api.github.com/repos/elastic/elasticsearch/stargazers" "https://api.github.com/repos/nathanmarz/storm/stargazers" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/stargazers" "https://api.github.com/repos/jfeinstein10/SlidingMenu/stargazers" ...
-##  $ items.contributors_url : chr  "https://api.github.com/repos/elastic/elasticsearch/contributors" "https://api.github.com/repos/nathanmarz/storm/contributors" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/contributors" "https://api.github.com/repos/jfeinstein10/SlidingMenu/contributors" ...
-##  $ items.subscribers_url  : chr  "https://api.github.com/repos/elastic/elasticsearch/subscribers" "https://api.github.com/repos/nathanmarz/storm/subscribers" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/subscribers" "https://api.github.com/repos/jfeinstein10/SlidingMenu/subscribers" ...
-##  $ items.subscription_url : chr  "https://api.github.com/repos/elastic/elasticsearch/subscription" "https://api.github.com/repos/nathanmarz/storm/subscription" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/subscription" "https://api.github.com/repos/jfeinstein10/SlidingMenu/subscription" ...
-##  $ items.commits_url      : chr  "https://api.github.com/repos/elastic/elasticsearch/commits{/sha}" "https://api.github.com/repos/nathanmarz/storm/commits{/sha}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/commits{/sha}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/commits{/sha}" ...
-##  $ items.git_commits_url  : chr  "https://api.github.com/repos/elastic/elasticsearch/git/commits{/sha}" "https://api.github.com/repos/nathanmarz/storm/git/commits{/sha}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/git/commits{/sha}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/git/commits{/sha}" ...
-##  $ items.comments_url     : chr  "https://api.github.com/repos/elastic/elasticsearch/comments{/number}" "https://api.github.com/repos/nathanmarz/storm/comments{/number}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/comments{/number}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/comments{/number}" ...
-##  $ items.issue_comment_url: chr  "https://api.github.com/repos/elastic/elasticsearch/issues/comments{/number}" "https://api.github.com/repos/nathanmarz/storm/issues/comments{/number}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/issues/comments{/number}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/issues/comments{/number}" ...
-##  $ items.contents_url     : chr  "https://api.github.com/repos/elastic/elasticsearch/contents/{+path}" "https://api.github.com/repos/nathanmarz/storm/contents/{+path}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/contents/{+path}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/contents/{+path}" ...
-##  $ items.compare_url      : chr  "https://api.github.com/repos/elastic/elasticsearch/compare/{base}...{head}" "https://api.github.com/repos/nathanmarz/storm/compare/{base}...{head}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/compare/{base}...{head}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/compare/{base}...{head}" ...
-##  $ items.merges_url       : chr  "https://api.github.com/repos/elastic/elasticsearch/merges" "https://api.github.com/repos/nathanmarz/storm/merges" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/merges" "https://api.github.com/repos/jfeinstein10/SlidingMenu/merges" ...
-##  $ items.archive_url      : chr  "https://api.github.com/repos/elastic/elasticsearch/{archive_format}{/ref}" "https://api.github.com/repos/nathanmarz/storm/{archive_format}{/ref}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/{archive_format}{/ref}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/{archive_format}{/ref}" ...
-##  $ items.downloads_url    : chr  "https://api.github.com/repos/elastic/elasticsearch/downloads" "https://api.github.com/repos/nathanmarz/storm/downloads" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/downloads" "https://api.github.com/repos/jfeinstein10/SlidingMenu/downloads" ...
-##  $ items.issues_url       : chr  "https://api.github.com/repos/elastic/elasticsearch/issues{/number}" "https://api.github.com/repos/nathanmarz/storm/issues{/number}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/issues{/number}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/issues{/number}" ...
-##  $ items.pulls_url        : chr  "https://api.github.com/repos/elastic/elasticsearch/pulls{/number}" "https://api.github.com/repos/nathanmarz/storm/pulls{/number}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/pulls{/number}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/pulls{/number}" ...
-##  $ items.milestones_url   : chr  "https://api.github.com/repos/elastic/elasticsearch/milestones{/number}" "https://api.github.com/repos/nathanmarz/storm/milestones{/number}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/milestones{/number}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/milestones{/number}" ...
-##  $ items.notifications_url: chr  "https://api.github.com/repos/elastic/elasticsearch/notifications{?since,all,participating}" "https://api.github.com/repos/nathanmarz/storm/notifications{?since,all,participating}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/notifications{?since,all,participating}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/notifications{?since,all,participating}" ...
-##  $ items.labels_url       : chr  "https://api.github.com/repos/elastic/elasticsearch/labels{/name}" "https://api.github.com/repos/nathanmarz/storm/labels{/name}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/labels{/name}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/labels{/name}" ...
-##  $ items.releases_url     : chr  "https://api.github.com/repos/elastic/elasticsearch/releases{/id}" "https://api.github.com/repos/nathanmarz/storm/releases{/id}" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/releases{/id}" "https://api.github.com/repos/jfeinstein10/SlidingMenu/releases{/id}" ...
-##  $ items.created_at       : chr  "2010-02-08T13:20:56Z" "2011-09-17T07:55:13Z" "2011-11-27T18:48:23Z" "2012-06-30T05:14:23Z" ...
-##  $ items.updated_at       : chr  "2015-04-20T05:40:29Z" "2015-04-20T07:35:31Z" "2015-04-20T06:11:18Z" "2015-04-20T06:52:26Z" ...
-##  $ items.pushed_at        : chr  "2015-04-20T01:51:34Z" "2014-02-10T03:05:12Z" "2015-03-24T14:51:01Z" "2015-04-14T11:37:13Z" ...
-##  $ items.git_url          : chr  "git://github.com/elastic/elasticsearch.git" "git://github.com/nathanmarz/storm.git" "git://github.com/nostra13/Android-Universal-Image-Loader.git" "git://github.com/jfeinstein10/SlidingMenu.git" ...
-##  $ items.ssh_url          : chr  "git@github.com:elastic/elasticsearch.git" "git@github.com:nathanmarz/storm.git" "git@github.com:nostra13/Android-Universal-Image-Loader.git" "git@github.com:jfeinstein10/SlidingMenu.git" ...
-##  $ items.clone_url        : chr  "https://github.com/elastic/elasticsearch.git" "https://github.com/nathanmarz/storm.git" "https://github.com/nostra13/Android-Universal-Image-Loader.git" "https://github.com/jfeinstein10/SlidingMenu.git" ...
-##  $ items.svn_url          : chr  "https://github.com/elastic/elasticsearch" "https://github.com/nathanmarz/storm" "https://github.com/nostra13/Android-Universal-Image-Loader" "https://github.com/jfeinstein10/SlidingMenu" ...
-##  $ items.homepage         : chr  "http://elasticsearch.org" "http://storm-project.net" "" "" ...
-##  $ items.size             : int  332036 27015 25179 28459 18403 21445 15595 994629 5121 17359 ...
-##  $ items.stargazers_count : int  10844 8576 8267 7431 6759 6448 6157 6132 5919 5690 ...
-##  $ items.watchers_count   : int  10844 8576 8267 7431 6759 6448 6157 6132 5919 5690 ...
-##  $ items.language         : chr  "Java" "Java" "Java" "Java" ...
-##  $ items.has_issues       : logi  TRUE FALSE TRUE TRUE TRUE TRUE ...
-##  $ items.has_downloads    : logi  TRUE TRUE TRUE TRUE TRUE TRUE ...
-##  $ items.has_wiki         : logi  FALSE TRUE TRUE TRUE FALSE FALSE ...
-##  $ items.has_pages        : logi  FALSE TRUE FALSE TRUE TRUE FALSE ...
-##  $ items.forks_count      : int  3400 1724 3868 4418 3906 2268 3034 3830 2876 1623 ...
-##  $ items.mirror_url       : logi  NA NA NA NA NA NA ...
-##  $ items.open_issues_count: int  1113 51 169 267 87 30 160 92 31 95 ...
-##  $ items.forks            : int  3400 1724 3868 4418 3906 2268 3034 3830 2876 1623 ...
-##  $ items.open_issues      : int  1113 51 169 267 87 30 160 92 31 95 ...
-##  $ items.watchers         : int  10844 8576 8267 7431 6759 6448 6157 6132 5919 5690 ...
-##  $ items.default_branch   : chr  "master" "moved-to-apache" "master" "master" ...
-##  $ items.score            : num  1 1 1 1 1 1 1 1 1 1 ...
-\end{verbatim}
-\begin{alltt}
-\hlkwd{summary}\hlstd{(data_dataframe_Java)}
-\end{alltt}
-\begin{verbatim}
-##   total_count      incomplete_results    items.id       
-##  Min.   :1038032   Mode :logical      Min.   :  507775  
-##  1st Qu.:1038032   FALSE:30           1st Qu.: 2204277  
-##  Median :1038032   NA's :0            Median : 3978354  
-##  Mean   :1038032                      Mean   : 6928071  
-##  3rd Qu.:1038032                      3rd Qu.: 8308456  
-##  Max.   :1038032                      Max.   :31533997  
-##   items.name        items.full_name   
-##  Length:30          Length:30         
-##  Class :character   Class :character  
-##  Mode  :character   Mode  :character  
-##                                       
-##                                       
-##                                       
-##  items.owner.login     items.owner.id    items.owner.avatar_url  items.owner.gravatar_id   items.owner.url    items.owner.html_url  items.owner.followers_url  items.owner.following_url  items.owner.gists_url  items.owner.starred_url  items.owner.subscriptions_url  items.owner.organizations_url  items.owner.repos_url  items.owner.events_url  items.owner.received_events_url   items.owner.type   items.owner.site_admin
-##  Length:30           Min.   :   66577    Length:30           Length:30           Length:30           Length:30           Length:30           Length:30           Length:30           Length:30           Length:30           Length:30           Length:30           Length:30           Length:30           Length:30           Mode :logical                                                                                    
-##  Class :character    1st Qu.:  110861    Class :character    Class :character    Class :character    Class :character    Class :character    Class :character    Class :character    Class :character    Class :character    Class :character    Class :character    Class :character    Class :character    Class :character    FALSE:30                                                                                         
-##  Mode  :character    Median :  546094    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    NA's :0                                                                                          
-##  NA                  Mean   : 1972236    NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                                                                                               
-##  NA                  3rd Qu.: 2596865    NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                                                                                               
-##  NA                  Max.   :11877067    NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                                                                                               
-##  items.private   items.html_url     items.description  items.fork     
-##  Mode :logical   Length:30          Length:30          Mode :logical  
-##  FALSE:30        Class :character   Class :character   FALSE:30       
-##  NA's :0         Mode  :character   Mode  :character   NA's :0        
-##                                                                       
-##                                                                       
-##                                                                       
-##   items.url         items.forks_url    items.keys_url    
-##  Length:30          Length:30          Length:30         
-##  Class :character   Class :character   Class :character  
-##  Mode  :character   Mode  :character   Mode  :character  
-##                                                          
-##                                                          
-##                                                          
-##  items.collaborators_url items.teams_url    items.hooks_url   
-##  Length:30               Length:30          Length:30         
-##  Class :character        Class :character   Class :character  
-##  Mode  :character        Mode  :character   Mode  :character  
-##                                                               
-##                                                               
-##                                                               
-##  items.issue_events_url items.events_url   items.assignees_url
-##  Length:30              Length:30          Length:30          
-##  Class :character       Class :character   Class :character   
-##  Mode  :character       Mode  :character   Mode  :character   
-##                                                               
-##                                                               
-##                                                               
-##  items.branches_url items.tags_url     items.blobs_url   
-##  Length:30          Length:30          Length:30         
-##  Class :character   Class :character   Class :character  
-##  Mode  :character   Mode  :character   Mode  :character  
-##                                                          
-##                                                          
-##                                                          
-##  items.git_tags_url items.git_refs_url items.trees_url   
-##  Length:30          Length:30          Length:30         
-##  Class :character   Class :character   Class :character  
-##  Mode  :character   Mode  :character   Mode  :character  
-##                                                          
-##                                                          
-##                                                          
-##  items.statuses_url items.languages_url items.stargazers_url
-##  Length:30          Length:30           Length:30           
-##  Class :character   Class :character    Class :character    
-##  Mode  :character   Mode  :character    Mode  :character    
-##                                                             
-##                                                             
-##                                                             
-##  items.contributors_url items.subscribers_url items.subscription_url
-##  Length:30              Length:30             Length:30             
-##  Class :character       Class :character      Class :character      
-##  Mode  :character       Mode  :character      Mode  :character      
-##                                                                     
-##                                                                     
-##                                                                     
-##  items.commits_url  items.git_commits_url items.comments_url
-##  Length:30          Length:30             Length:30         
-##  Class :character   Class :character      Class :character  
-##  Mode  :character   Mode  :character      Mode  :character  
-##                                                             
-##                                                             
-##                                                             
-##  items.issue_comment_url items.contents_url items.compare_url 
-##  Length:30               Length:30          Length:30         
-##  Class :character        Class :character   Class :character  
-##  Mode  :character        Mode  :character   Mode  :character  
-##                                                               
-##                                                               
-##                                                               
-##  items.merges_url   items.archive_url  items.downloads_url
-##  Length:30          Length:30          Length:30          
-##  Class :character   Class :character   Class :character   
-##  Mode  :character   Mode  :character   Mode  :character   
-##                                                           
-##                                                           
-##                                                           
-##  items.issues_url   items.pulls_url    items.milestones_url
-##  Length:30          Length:30          Length:30           
-##  Class :character   Class :character   Class :character    
-##  Mode  :character   Mode  :character   Mode  :character    
-##                                                            
-##                                                            
-##                                                            
-##  items.notifications_url items.labels_url   items.releases_url
-##  Length:30               Length:30          Length:30         
-##  Class :character        Class :character   Class :character  
-##  Mode  :character        Mode  :character   Mode  :character  
-##                                                               
-##                                                               
-##                                                               
-##  items.created_at   items.updated_at   items.pushed_at   
-##  Length:30          Length:30          Length:30         
-##  Class :character   Class :character   Class :character  
-##  Mode  :character   Mode  :character   Mode  :character  
-##                                                          
-##                                                          
-##                                                          
-##  items.git_url      items.ssh_url      items.clone_url   
-##  Length:30          Length:30          Length:30         
-##  Class :character   Class :character   Class :character  
-##  Mode  :character   Mode  :character   Mode  :character  
-##                                                          
-##                                                          
-##                                                          
-##  items.svn_url      items.homepage       items.size    
-##  Length:30          Length:30          Min.   :   782  
-##  Class :character   Class :character   1st Qu.:  6579  
-##  Mode  :character   Mode  :character   Median : 19924  
-##                                        Mean   : 94869  
-##                                        3rd Qu.: 55819  
-##                                        Max.   :994629  
-##  items.stargazers_count items.watchers_count items.language    
-##  Min.   : 3470          Min.   : 3470        Length:30         
-##  1st Qu.: 4106          1st Qu.: 4106        Class :character  
-##  Median : 4959          Median : 4959        Mode  :character  
-##  Mean   : 5290          Mean   : 5290                          
-##  3rd Qu.: 6079          3rd Qu.: 6079                          
-##  Max.   :10844          Max.   :10844                          
-##  items.has_issues items.has_downloads items.has_wiki  items.has_pages
-##  Mode :logical    Mode:logical        Mode :logical   Mode :logical  
-##  FALSE:4          TRUE:30             FALSE:8         FALSE:13       
-##  TRUE :26         NA's:0              TRUE :22        TRUE :17       
-##  NA's :0                              NA's :0         NA's :0        
-##                                                                      
-##                                                                      
-##  items.forks_count items.mirror_url items.open_issues_count
-##  Min.   : 194.0    Mode:logical     Min.   :   0.0         
-##  1st Qu.: 934.5    NA's:30          1st Qu.:  30.0         
-##  Median :1495.0                     Median :  78.0         
-##  Mean   :2034.7                     Mean   : 126.7         
-##  3rd Qu.:3049.8                     3rd Qu.: 134.2         
-##  Max.   :4556.0                     Max.   :1113.0         
-##   items.forks     items.open_issues items.watchers  items.default_branch
-##  Min.   : 194.0   Min.   :   0.0    Min.   : 3470   Length:30           
-##  1st Qu.: 934.5   1st Qu.:  30.0    1st Qu.: 4106   Class :character    
-##  Median :1495.0   Median :  78.0    Median : 4959   Mode  :character    
-##  Mean   :2034.7   Mean   : 126.7    Mean   : 5290                       
-##  3rd Qu.:3049.8   3rd Qu.: 134.2    3rd Qu.: 6079                       
-##  Max.   :4556.0   Max.   :1113.0    Max.   :10844                       
-##   items.score
-##  Min.   :1   
-##  1st Qu.:1   
-##  Median :1   
-##  Mean   :1   
-##  3rd Qu.:1   
-##  Max.   :1
-\end{verbatim}
-\begin{alltt}
-\hlkwd{class}\hlstd{(data_dataframe_Javascript)}
-\end{alltt}
-\begin{verbatim}
-## [1] "data.frame"
-\end{verbatim}
-\begin{alltt}
-\hlkwd{str}\hlstd{(data_dataframe_Javascript)}
-\end{alltt}
-\begin{verbatim}
-## 'data.frame':	30 obs. of  70 variables:
-##  $ total_count            : int  1291131 1291131 1291131 1291131 1291131 1291131 1291131 1291131 1291131 1291131 ...
-##  $ incomplete_results     : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
-##  $ items.id               : int  460078 943149 211666 167174 486550 3214406 3065454 2935735 952189 1861458 ...
-##  $ items.name             : chr  "angular.js" "d3" "node" "jquery" ...
-##  $ items.full_name        : chr  "angular/angular.js" "mbostock/d3" "joyent/node" "jquery/jquery" ...
-##  $ items.owner            :'data.frame':	30 obs. of  17 variables:
-##   ..$ login              : chr  "angular" "mbostock" "joyent" "jquery" ...
-##   ..$ id                 : int  139426 230541 10161 70142 1136800 789528 83575 476009 4732 629429 ...
-##   ..$ avatar_url         : chr  "https://avatars.githubusercontent.com/u/139426?v=3" "https://avatars.githubusercontent.com/u/230541?v=3" "https://avatars.githubusercontent.com/u/10161?v=3" "https://avatars.githubusercontent.com/u/70142?v=3" ...
-##   ..$ gravatar_id        : chr  "" "" "" "" ...
-##   ..$ url                : chr  "https://api.github.com/users/angular" "https://api.github.com/users/mbostock" "https://api.github.com/users/joyent" "https://api.github.com/users/jquery" ...
-##   ..$ html_url           : chr  "https://github.com/angular" "https://github.com/mbostock" "https://github.com/joyent" "https://github.com/jquery" ...
-##   ..$ followers_url      : chr  "https://api.github.com/users/angular/followers" "https://api.github.com/users/mbostock/followers" "https://api.github.com/users/joyent/followers" "https://api.github.com/users/jquery/followers" ...
-##   ..$ following_url      : chr  "https://api.github.com/users/angular/following{/other_user}" "https://api.github.com/users/mbostock/following{/other_user}" "https://api.github.com/users/joyent/following{/other_user}" "https://api.github.com/users/jquery/following{/other_user}" ...
-##   ..$ gists_url          : chr  "https://api.github.com/users/angular/gists{/gist_id}" "https://api.github.com/users/mbostock/gists{/gist_id}" "https://api.github.com/users/joyent/gists{/gist_id}" "https://api.github.com/users/jquery/gists{/gist_id}" ...
-##   ..$ starred_url        : chr  "https://api.github.com/users/angular/starred{/owner}{/repo}" "https://api.github.com/users/mbostock/starred{/owner}{/repo}" "https://api.github.com/users/joyent/starred{/owner}{/repo}" "https://api.github.com/users/jquery/starred{/owner}{/repo}" ...
-##   ..$ subscriptions_url  : chr  "https://api.github.com/users/angular/subscriptions" "https://api.github.com/users/mbostock/subscriptions" "https://api.github.com/users/joyent/subscriptions" "https://api.github.com/users/jquery/subscriptions" ...
-##   ..$ organizations_url  : chr  "https://api.github.com/users/angular/orgs" "https://api.github.com/users/mbostock/orgs" "https://api.github.com/users/joyent/orgs" "https://api.github.com/users/jquery/orgs" ...
-##   ..$ repos_url          : chr  "https://api.github.com/users/angular/repos" "https://api.github.com/users/mbostock/repos" "https://api.github.com/users/joyent/repos" "https://api.github.com/users/jquery/repos" ...
-##   ..$ events_url         : chr  "https://api.github.com/users/angular/events{/privacy}" "https://api.github.com/users/mbostock/events{/privacy}" "https://api.github.com/users/joyent/events{/privacy}" "https://api.github.com/users/jquery/events{/privacy}" ...
-##   ..$ received_events_url: chr  "https://api.github.com/users/angular/received_events" "https://api.github.com/users/mbostock/received_events" "https://api.github.com/users/joyent/received_events" "https://api.github.com/users/jquery/received_events" ...
-##   ..$ type               : chr  "Organization" "User" "Organization" "Organization" ...
-##   ..$ site_admin         : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
-##  $ items.private          : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
-##  $ items.html_url         : chr  "https://github.com/angular/angular.js" "https://github.com/mbostock/d3" "https://github.com/joyent/node" "https://github.com/jquery/jquery" ...
-##  $ items.description      : chr  "HTML enhanced for web apps" "A JavaScript visualization library for HTML and SVG." "evented I/O for v8 javascript" "jQuery JavaScript Library" ...
-##  $ items.fork             : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
-##  $ items.url              : chr  "https://api.github.com/repos/angular/angular.js" "https://api.github.com/repos/mbostock/d3" "https://api.github.com/repos/joyent/node" "https://api.github.com/repos/jquery/jquery" ...
-##  $ items.forks_url        : chr  "https://api.github.com/repos/angular/angular.js/forks" "https://api.github.com/repos/mbostock/d3/forks" "https://api.github.com/repos/joyent/node/forks" "https://api.github.com/repos/jquery/jquery/forks" ...
-##  $ items.keys_url         : chr  "https://api.github.com/repos/angular/angular.js/keys{/key_id}" "https://api.github.com/repos/mbostock/d3/keys{/key_id}" "https://api.github.com/repos/joyent/node/keys{/key_id}" "https://api.github.com/repos/jquery/jquery/keys{/key_id}" ...
-##  $ items.collaborators_url: chr  "https://api.github.com/repos/angular/angular.js/collaborators{/collaborator}" "https://api.github.com/repos/mbostock/d3/collaborators{/collaborator}" "https://api.github.com/repos/joyent/node/collaborators{/collaborator}" "https://api.github.com/repos/jquery/jquery/collaborators{/collaborator}" ...
-##  $ items.teams_url        : chr  "https://api.github.com/repos/angular/angular.js/teams" "https://api.github.com/repos/mbostock/d3/teams" "https://api.github.com/repos/joyent/node/teams" "https://api.github.com/repos/jquery/jquery/teams" ...
-##  $ items.hooks_url        : chr  "https://api.github.com/repos/angular/angular.js/hooks" "https://api.github.com/repos/mbostock/d3/hooks" "https://api.github.com/repos/joyent/node/hooks" "https://api.github.com/repos/jquery/jquery/hooks" ...
-##  $ items.issue_events_url : chr  "https://api.github.com/repos/angular/angular.js/issues/events{/number}" "https://api.github.com/repos/mbostock/d3/issues/events{/number}" "https://api.github.com/repos/joyent/node/issues/events{/number}" "https://api.github.com/repos/jquery/jquery/issues/events{/number}" ...
-##  $ items.events_url       : chr  "https://api.github.com/repos/angular/angular.js/events" "https://api.github.com/repos/mbostock/d3/events" "https://api.github.com/repos/joyent/node/events" "https://api.github.com/repos/jquery/jquery/events" ...
-##  $ items.assignees_url    : chr  "https://api.github.com/repos/angular/angular.js/assignees{/user}" "https://api.github.com/repos/mbostock/d3/assignees{/user}" "https://api.github.com/repos/joyent/node/assignees{/user}" "https://api.github.com/repos/jquery/jquery/assignees{/user}" ...
-##  $ items.branches_url     : chr  "https://api.github.com/repos/angular/angular.js/branches{/branch}" "https://api.github.com/repos/mbostock/d3/branches{/branch}" "https://api.github.com/repos/joyent/node/branches{/branch}" "https://api.github.com/repos/jquery/jquery/branches{/branch}" ...
-##  $ items.tags_url         : chr  "https://api.github.com/repos/angular/angular.js/tags" "https://api.github.com/repos/mbostock/d3/tags" "https://api.github.com/repos/joyent/node/tags" "https://api.github.com/repos/jquery/jquery/tags" ...
-##  $ items.blobs_url        : chr  "https://api.github.com/repos/angular/angular.js/git/blobs{/sha}" "https://api.github.com/repos/mbostock/d3/git/blobs{/sha}" "https://api.github.com/repos/joyent/node/git/blobs{/sha}" "https://api.github.com/repos/jquery/jquery/git/blobs{/sha}" ...
-##  $ items.git_tags_url     : chr  "https://api.github.com/repos/angular/angular.js/git/tags{/sha}" "https://api.github.com/repos/mbostock/d3/git/tags{/sha}" "https://api.github.com/repos/joyent/node/git/tags{/sha}" "https://api.github.com/repos/jquery/jquery/git/tags{/sha}" ...
-##  $ items.git_refs_url     : chr  "https://api.github.com/repos/angular/angular.js/git/refs{/sha}" "https://api.github.com/repos/mbostock/d3/git/refs{/sha}" "https://api.github.com/repos/joyent/node/git/refs{/sha}" "https://api.github.com/repos/jquery/jquery/git/refs{/sha}" ...
-##  $ items.trees_url        : chr  "https://api.github.com/repos/angular/angular.js/git/trees{/sha}" "https://api.github.com/repos/mbostock/d3/git/trees{/sha}" "https://api.github.com/repos/joyent/node/git/trees{/sha}" "https://api.github.com/repos/jquery/jquery/git/trees{/sha}" ...
-##  $ items.statuses_url     : chr  "https://api.github.com/repos/angular/angular.js/statuses/{sha}" "https://api.github.com/repos/mbostock/d3/statuses/{sha}" "https://api.github.com/repos/joyent/node/statuses/{sha}" "https://api.github.com/repos/jquery/jquery/statuses/{sha}" ...
-##  $ items.languages_url    : chr  "https://api.github.com/repos/angular/angular.js/languages" "https://api.github.com/repos/mbostock/d3/languages" "https://api.github.com/repos/joyent/node/languages" "https://api.github.com/repos/jquery/jquery/languages" ...
-##  $ items.stargazers_url   : chr  "https://api.github.com/repos/angular/angular.js/stargazers" "https://api.github.com/repos/mbostock/d3/stargazers" "https://api.github.com/repos/joyent/node/stargazers" "https://api.github.com/repos/jquery/jquery/stargazers" ...
-##  $ items.contributors_url : chr  "https://api.github.com/repos/angular/angular.js/contributors" "https://api.github.com/repos/mbostock/d3/contributors" "https://api.github.com/repos/joyent/node/contributors" "https://api.github.com/repos/jquery/jquery/contributors" ...
-##  $ items.subscribers_url  : chr  "https://api.github.com/repos/angular/angular.js/subscribers" "https://api.github.com/repos/mbostock/d3/subscribers" "https://api.github.com/repos/joyent/node/subscribers" "https://api.github.com/repos/jquery/jquery/subscribers" ...
-##  $ items.subscription_url : chr  "https://api.github.com/repos/angular/angular.js/subscription" "https://api.github.com/repos/mbostock/d3/subscription" "https://api.github.com/repos/joyent/node/subscription" "https://api.github.com/repos/jquery/jquery/subscription" ...
-##  $ items.commits_url      : chr  "https://api.github.com/repos/angular/angular.js/commits{/sha}" "https://api.github.com/repos/mbostock/d3/commits{/sha}" "https://api.github.com/repos/joyent/node/commits{/sha}" "https://api.github.com/repos/jquery/jquery/commits{/sha}" ...
-##  $ items.git_commits_url  : chr  "https://api.github.com/repos/angular/angular.js/git/commits{/sha}" "https://api.github.com/repos/mbostock/d3/git/commits{/sha}" "https://api.github.com/repos/joyent/node/git/commits{/sha}" "https://api.github.com/repos/jquery/jquery/git/commits{/sha}" ...
-##  $ items.comments_url     : chr  "https://api.github.com/repos/angular/angular.js/comments{/number}" "https://api.github.com/repos/mbostock/d3/comments{/number}" "https://api.github.com/repos/joyent/node/comments{/number}" "https://api.github.com/repos/jquery/jquery/comments{/number}" ...
-##  $ items.issue_comment_url: chr  "https://api.github.com/repos/angular/angular.js/issues/comments{/number}" "https://api.github.com/repos/mbostock/d3/issues/comments{/number}" "https://api.github.com/repos/joyent/node/issues/comments{/number}" "https://api.github.com/repos/jquery/jquery/issues/comments{/number}" ...
-##  $ items.contents_url     : chr  "https://api.github.com/repos/angular/angular.js/contents/{+path}" "https://api.github.com/repos/mbostock/d3/contents/{+path}" "https://api.github.com/repos/joyent/node/contents/{+path}" "https://api.github.com/repos/jquery/jquery/contents/{+path}" ...
-##  $ items.compare_url      : chr  "https://api.github.com/repos/angular/angular.js/compare/{base}...{head}" "https://api.github.com/repos/mbostock/d3/compare/{base}...{head}" "https://api.github.com/repos/joyent/node/compare/{base}...{head}" "https://api.github.com/repos/jquery/jquery/compare/{base}...{head}" ...
-##  $ items.merges_url       : chr  "https://api.github.com/repos/angular/angular.js/merges" "https://api.github.com/repos/mbostock/d3/merges" "https://api.github.com/repos/joyent/node/merges" "https://api.github.com/repos/jquery/jquery/merges" ...
-##  $ items.archive_url      : chr  "https://api.github.com/repos/angular/angular.js/{archive_format}{/ref}" "https://api.github.com/repos/mbostock/d3/{archive_format}{/ref}" "https://api.github.com/repos/joyent/node/{archive_format}{/ref}" "https://api.github.com/repos/jquery/jquery/{archive_format}{/ref}" ...
-##  $ items.downloads_url    : chr  "https://api.github.com/repos/angular/angular.js/downloads" "https://api.github.com/repos/mbostock/d3/downloads" "https://api.github.com/repos/joyent/node/downloads" "https://api.github.com/repos/jquery/jquery/downloads" ...
-##  $ items.issues_url       : chr  "https://api.github.com/repos/angular/angular.js/issues{/number}" "https://api.github.com/repos/mbostock/d3/issues{/number}" "https://api.github.com/repos/joyent/node/issues{/number}" "https://api.github.com/repos/jquery/jquery/issues{/number}" ...
-##  $ items.pulls_url        : chr  "https://api.github.com/repos/angular/angular.js/pulls{/number}" "https://api.github.com/repos/mbostock/d3/pulls{/number}" "https://api.github.com/repos/joyent/node/pulls{/number}" "https://api.github.com/repos/jquery/jquery/pulls{/number}" ...
-##  $ items.milestones_url   : chr  "https://api.github.com/repos/angular/angular.js/milestones{/number}" "https://api.github.com/repos/mbostock/d3/milestones{/number}" "https://api.github.com/repos/joyent/node/milestones{/number}" "https://api.github.com/repos/jquery/jquery/milestones{/number}" ...
-##  $ items.notifications_url: chr  "https://api.github.com/repos/angular/angular.js/notifications{?since,all,participating}" "https://api.github.com/repos/mbostock/d3/notifications{?since,all,participating}" "https://api.github.com/repos/joyent/node/notifications{?since,all,participating}" "https://api.github.com/repos/jquery/jquery/notifications{?since,all,participating}" ...
-##  $ items.labels_url       : chr  "https://api.github.com/repos/angular/angular.js/labels{/name}" "https://api.github.com/repos/mbostock/d3/labels{/name}" "https://api.github.com/repos/joyent/node/labels{/name}" "https://api.github.com/repos/jquery/jquery/labels{/name}" ...
-##  $ items.releases_url     : chr  "https://api.github.com/repos/angular/angular.js/releases{/id}" "https://api.github.com/repos/mbostock/d3/releases{/id}" "https://api.github.com/repos/joyent/node/releases{/id}" "https://api.github.com/repos/jquery/jquery/releases{/id}" ...
-##  $ items.created_at       : chr  "2010-01-06T00:34:37Z" "2010-09-27T17:22:42Z" "2009-05-27T16:29:46Z" "2009-04-03T15:20:14Z" ...
-##  $ items.updated_at       : chr  "2015-04-20T07:38:01Z" "2015-04-20T07:32:04Z" "2015-04-20T07:21:56Z" "2015-04-20T06:38:29Z" ...
-##  $ items.pushed_at        : chr  "2015-04-19T17:39:10Z" "2015-04-18T00:03:11Z" "2015-04-17T08:36:26Z" "2015-04-17T16:38:06Z" ...
-##  $ items.git_url          : chr  "git://github.com/angular/angular.js.git" "git://github.com/mbostock/d3.git" "git://github.com/joyent/node.git" "git://github.com/jquery/jquery.git" ...
-##  $ items.ssh_url          : chr  "git@github.com:angular/angular.js.git" "git@github.com:mbostock/d3.git" "git@github.com:joyent/node.git" "git@github.com:jquery/jquery.git" ...
-##  $ items.clone_url        : chr  "https://github.com/angular/angular.js.git" "https://github.com/mbostock/d3.git" "https://github.com/joyent/node.git" "https://github.com/jquery/jquery.git" ...
-##  $ items.svn_url          : chr  "https://github.com/angular/angular.js" "https://github.com/mbostock/d3" "https://github.com/joyent/node" "https://github.com/jquery/jquery" ...
-##  $ items.homepage         : chr  "http://angularjs.org" "http://d3js.org" "http://nodejs.org/" "http://jquery.com/" ...
-##  $ items.size             : int  236576 73722 344103 40423 66334 172690 2276 326021 47145 80738 ...
-##  $ items.stargazers_count : int  37621 36846 35785 34147 29519 24313 23880 21811 21457 20714 ...
-##  $ items.watchers_count   : int  37621 36846 35785 34147 29519 24313 23880 21811 21457 20714 ...
-##  $ items.language         : chr  "JavaScript" "JavaScript" "JavaScript" "JavaScript" ...
-##  $ items.has_issues       : logi  TRUE TRUE TRUE TRUE TRUE TRUE ...
-##  $ items.has_downloads    : logi  TRUE TRUE FALSE FALSE TRUE TRUE ...
-##  $ items.has_wiki         : logi  TRUE TRUE TRUE TRUE TRUE TRUE ...
-##  $ items.has_pages        : logi  FALSE TRUE FALSE FALSE FALSE FALSE ...
-##  $ items.forks_count      : int  15680 9352 7993 8266 7600 2752 5210 4511 4803 6265 ...
-##  $ items.mirror_url       : logi  NA NA NA NA NA NA ...
-##  $ items.open_issues_count: int  1197 244 1217 119 11 530 185 1241 32 124 ...
-##  $ items.forks            : int  15680 9352 7993 8266 7600 2752 5210 4511 4803 6265 ...
-##  $ items.open_issues      : int  1197 244 1217 119 11 530 185 1241 32 124 ...
-##  $ items.watchers         : int  37621 36846 35785 34147 29519 24313 23880 21811 21457 20714 ...
-##  $ items.default_branch   : chr  "master" "master" "master" "master" ...
-##  $ items.score            : num  1 1 1 1 1 1 1 1 1 1 ...
-\end{verbatim}
-\begin{alltt}
-\hlkwd{summary}\hlstd{(data_dataframe_Javascript)}
-\end{alltt}
-\begin{verbatim}
-##   total_count      incomplete_results    items.id       
-##  Min.   :1291131   Mode :logical      Min.   :  167174  
-##  1st Qu.:1291131   FALSE:30           1st Qu.:  562535  
-##  Median :1291131   NA's :0            Median : 1613150  
-##  Mean   :1291131                      Mean   : 4600390  
-##  3rd Qu.:1291131                      3rd Qu.: 8257385  
-##  Max.   :1291131                      Max.   :29028775  
-##   items.name        items.full_name   
-##  Length:30          Length:30         
-##  Class :character   Class :character  
-##  Mode  :character   Mode  :character  
-##                                       
-##                                       
-##                                       
-##  items.owner.login     items.owner.id    items.owner.avatar_url  items.owner.gravatar_id   items.owner.url    items.owner.html_url  items.owner.followers_url  items.owner.following_url  items.owner.gists_url  items.owner.starred_url  items.owner.subscriptions_url  items.owner.organizations_url  items.owner.repos_url  items.owner.events_url  items.owner.received_events_url   items.owner.type   items.owner.site_admin
-##  Length:30           Min.   :   4732     Length:30           Length:30           Length:30           Length:30           Length:30           Length:30           Length:30           Length:30           Length:30           Length:30           Length:30           Length:30           Length:30           Length:30           Mode :logical                                                                                    
-##  Class :character    1st Qu.:  86953     Class :character    Class :character    Class :character    Class :character    Class :character    Class :character    Class :character    Class :character    Class :character    Class :character    Class :character    Class :character    Class :character    Class :character    FALSE:30                                                                                         
-##  Mode  :character    Median : 539310     Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    Mode  :character    NA's :0                                                                                          
-##  NA                  Mean   :1393905     NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                                                                                               
-##  NA                  3rd Qu.:1406879     NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                                                                                               
-##  NA                  Max.   :8077542     NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                  NA                                                                                               
-##  items.private   items.html_url     items.description  items.fork     
-##  Mode :logical   Length:30          Length:30          Mode :logical  
-##  FALSE:30        Class :character   Class :character   FALSE:30       
-##  NA's :0         Mode  :character   Mode  :character   NA's :0        
-##                                                                       
-##                                                                       
-##                                                                       
-##   items.url         items.forks_url    items.keys_url    
-##  Length:30          Length:30          Length:30         
-##  Class :character   Class :character   Class :character  
-##  Mode  :character   Mode  :character   Mode  :character  
-##                                                          
-##                                                          
-##                                                          
-##  items.collaborators_url items.teams_url    items.hooks_url   
-##  Length:30               Length:30          Length:30         
-##  Class :character        Class :character   Class :character  
-##  Mode  :character        Mode  :character   Mode  :character  
-##                                                               
-##                                                               
-##                                                               
-##  items.issue_events_url items.events_url   items.assignees_url
-##  Length:30              Length:30          Length:30          
-##  Class :character       Class :character   Class :character   
-##  Mode  :character       Mode  :character   Mode  :character   
-##                                                               
-##                                                               
-##                                                               
-##  items.branches_url items.tags_url     items.blobs_url   
-##  Length:30          Length:30          Length:30         
-##  Class :character   Class :character   Class :character  
-##  Mode  :character   Mode  :character   Mode  :character  
-##                                                          
-##                                                          
-##                                                          
-##  items.git_tags_url items.git_refs_url items.trees_url   
-##  Length:30          Length:30          Length:30         
-##  Class :character   Class :character   Class :character  
-##  Mode  :character   Mode  :character   Mode  :character  
-##                                                          
-##                                                          
-##                                                          
-##  items.statuses_url items.languages_url items.stargazers_url
-##  Length:30          Length:30           Length:30           
-##  Class :character   Class :character    Class :character    
-##  Mode  :character   Mode  :character    Mode  :character    
-##                                                             
-##                                                             
-##                                                             
-##  items.contributors_url items.subscribers_url items.subscription_url
-##  Length:30              Length:30             Length:30             
-##  Class :character       Class :character      Class :character      
-##  Mode  :character       Mode  :character      Mode  :character      
-##                                                                     
-##                                                                     
-##                                                                     
-##  items.commits_url  items.git_commits_url items.comments_url
-##  Length:30          Length:30             Length:30         
-##  Class :character   Class :character      Class :character  
-##  Mode  :character   Mode  :character      Mode  :character  
-##                                                             
-##                                                             
-##                                                             
-##  items.issue_comment_url items.contents_url items.compare_url 
-##  Length:30               Length:30          Length:30         
-##  Class :character        Class :character   Class :character  
-##  Mode  :character        Mode  :character   Mode  :character  
-##                                                               
-##                                                               
-##                                                               
-##  items.merges_url   items.archive_url  items.downloads_url
-##  Length:30          Length:30          Length:30          
-##  Class :character   Class :character   Class :character   
-##  Mode  :character   Mode  :character   Mode  :character   
-##                                                           
-##                                                           
-##                                                           
-##  items.issues_url   items.pulls_url    items.milestones_url
-##  Length:30          Length:30          Length:30           
-##  Class :character   Class :character   Class :character    
-##  Mode  :character   Mode  :character   Mode  :character    
-##                                                            
-##                                                            
-##                                                            
-##  items.notifications_url items.labels_url   items.releases_url
-##  Length:30               Length:30          Length:30         
-##  Class :character        Class :character   Class :character  
-##  Mode  :character        Mode  :character   Mode  :character  
-##                                                               
-##                                                               
-##                                                               
-##  items.created_at   items.updated_at   items.pushed_at   
-##  Length:30          Length:30          Length:30         
-##  Class :character   Class :character   Class :character  
-##  Mode  :character   Mode  :character   Mode  :character  
-##                                                          
-##                                                          
-##                                                          
-##  items.git_url      items.ssh_url      items.clone_url   
-##  Length:30          Length:30          Length:30         
-##  Class :character   Class :character   Class :character  
-##  Mode  :character   Mode  :character   Mode  :character  
-##                                                          
-##                                                          
-##                                                          
-##  items.svn_url      items.homepage       items.size    
-##  Length:30          Length:30          Min.   :   781  
-##  Class :character   Class :character   1st Qu.: 10289  
-##  Mode  :character   Mode  :character   Median : 33549  
-##                                        Mean   : 79534  
-##                                        3rd Qu.: 80598  
-##                                        Max.   :370851  
-##  items.stargazers_count items.watchers_count items.language    
-##  Min.   :12649          Min.   :12649        Length:30         
-##  1st Qu.:14400          1st Qu.:14400        Class :character  
-##  Median :17890          Median :17890        Mode  :character  
-##  Mean   :20154          Mean   :20154                          
-##  3rd Qu.:21722          3rd Qu.:21722                          
-##  Max.   :37621          Max.   :37621                          
-##  items.has_issues items.has_downloads items.has_wiki  items.has_pages
-##  Mode :logical    Mode :logical       Mode :logical   Mode :logical  
-##  FALSE:1          FALSE:3             FALSE:6         FALSE:14       
-##  TRUE :29         TRUE :27            TRUE :24        TRUE :16       
-##  NA's :0          NA's :0             NA's :0         NA's :0        
-##                                                                      
-##                                                                      
-##  items.forks_count items.mirror_url items.open_issues_count
-##  Min.   :  462     Mode:logical     Min.   :  11.00        
-##  1st Qu.: 2275     NA's:30          1st Qu.:  59.75        
-##  Median : 3231                      Median : 186.50        
-##  Mean   : 4212                      Mean   : 305.90        
-##  3rd Qu.: 5187                      3rd Qu.: 333.75        
-##  Max.   :15680                      Max.   :1241.00        
-##   items.forks    items.open_issues items.watchers  items.default_branch
-##  Min.   :  462   Min.   :  11.00   Min.   :12649   Length:30           
-##  1st Qu.: 2275   1st Qu.:  59.75   1st Qu.:14400   Class :character    
-##  Median : 3231   Median : 186.50   Median :17890   Mode  :character    
-##  Mean   : 4212   Mean   : 305.90   Mean   :20154                       
-##  3rd Qu.: 5187   3rd Qu.: 333.75   3rd Qu.:21722                       
-##  Max.   :15680   Max.   :1241.00   Max.   :37621                       
-##   items.score
-##  Min.   :1   
-##  1st Qu.:1   
-##  Median :1   
-##  Mean   :1   
-##  3rd Qu.:1   
-##  Max.   :1
-\end{verbatim}
 \end{kframe}
 \end{knitrout}
 
-\subsubsection*{Results}
+\subsection*{Results}
 So, we have tables for repositories created in Java and in JavaScript. Seeing he values in the tables, we can verify the language in which the repository was created. \par
 The number of repositories for each, Java and JavaScript can be calculated as follows:
 
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlstd{njava}\hlkwb{<-}\hlstd{data_dataframe_Java[}\hlnum{1}\hlstd{,}\hlnum{1}\hlstd{]}
-\hlstd{njavascript}\hlkwb{<-}\hlstd{data_dataframe_Javascript[}\hlnum{1}\hlstd{,}\hlnum{1}\hlstd{]}
-
-\hlcom{#Creating a table with these values:}
-
-\hlstd{language}\hlkwb{<-}\hlkwd{c}\hlstd{(}\hlstr{"Java"}\hlstd{,}\hlstr{"JavaScript"}\hlstd{)}
-\hlstd{repositories}\hlkwb{<-}\hlkwd{c}\hlstd{(}\hlkwd{get}\hlstd{(}\hlstr{"njava"}\hlstd{),}\hlkwd{get}\hlstd{(}\hlstr{"njavascript"}\hlstd{))}
-
-\hlstd{graph}\hlkwb{<-}\hlkwd{cbind}\hlstd{(language,repositories)}
-\hlstd{graph_data_frame}\hlkwb{<-}\hlkwd{as.data.frame}\hlstd{(graph)}
-
+\hlkwd{class}\hlstd{(graph_data_frame)}
+\end{alltt}
+\begin{verbatim}
+## [1] "data.frame"
+\end{verbatim}
+\begin{alltt}
+\hlkwd{str}\hlstd{(graph_data_frame)}
+\end{alltt}
+\begin{verbatim}
+## 'data.frame':	2 obs. of  2 variables:
+##  $ language    : Factor w/ 2 levels "Java","JavaScript": 1 2
+##  $ repositories: Factor w/ 2 levels "1039741","1292428": 1 2
+\end{verbatim}
+\begin{alltt}
+\hlkwd{summary}\hlstd{(graph_data_frame)}
+\end{alltt}
+\begin{verbatim}
+##        language  repositories
+##  Java      :1   1039741:1    
+##  JavaScript:1   1292428:1
+\end{verbatim}
+\begin{alltt}
 \hlstd{graph_data_frame}
 \end{alltt}
 \begin{verbatim}
 ##     language repositories
-## 1       Java      1038032
-## 2 JavaScript      1291131
+## 1       Java      1039741
+## 2 JavaScript      1292428
 \end{verbatim}
+\begin{alltt}
+\hlkwd{write.csv}\hlstd{(graph_data_frame,}\hlkwc{file}\hlstd{=}\hlstr{"OSEMNassignment.csv"}\hlstd{)}
+\end{alltt}
 \end{kframe}
 \end{knitrout}
 
@@ -700,11 +184,22 @@ Having a table with language on X-axis and number of repositories for each langu
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
 \hlkwd{library}\hlstd{(ggplot2)}
+\hlkwd{library}\hlstd{(scales)}
+
 \hlstd{ggplot2}\hlopt{::}\hlkwd{ggplot}\hlstd{(graph_data_frame,}\hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=language,}\hlkwc{y}\hlstd{=repositories,}\hlkwc{fill}\hlstd{=language))}\hlopt{+}
         \hlkwd{geom_bar}\hlstd{(}\hlkwc{stat}\hlstd{=}\hlstr{"identity"}\hlstd{)}
 \end{alltt}
 \end{kframe}
 \includegraphics[width=\maxwidth]{figure/chunk3-1} 
+\begin{kframe}\begin{alltt}
+\hlstd{line}\hlkwb{<-}\hlstd{ggplot2}\hlopt{::}\hlkwd{ggplot}\hlstd{(graph_data_frame,}\hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=language,}\hlkwc{y}\hlstd{=repositories,}\hlkwc{group}\hlstd{=}\hlnum{1}\hlstd{))}\hlopt{+}
+       \hlkwd{geom_line}\hlstd{(}\hlkwc{color}\hlstd{=}\hlstr{"blue"}\hlstd{,} \hlkwc{linetype}\hlstd{=}\hlstr{"dotted"}\hlstd{)}\hlopt{+}
+        \hlkwd{geom_point}\hlstd{(}\hlkwc{fill}\hlstd{=}\hlstr{"white"}\hlstd{,} \hlkwc{color}\hlstd{=}\hlstr{"blue"}\hlstd{,} \hlkwc{shape}\hlstd{=}\hlnum{21}\hlstd{,} \hlkwc{size}\hlstd{=}\hlnum{4}\hlstd{)}
+
+\hlstd{line}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/chunk3-2} 
 
 \end{knitrout}
 
