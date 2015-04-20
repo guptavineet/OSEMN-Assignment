@@ -1,0 +1,1734 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.6)  20 APR 2015 02:42
+entering extended mode
+ %&-line parsing enabled.
+**OSEMNassignment.tex
+(./OSEMNassignment.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/framed.sty
+Package: framed 2007/10/04 v 0.95: framed or shaded text with page breaks
+\fb@frw=\dimen105
+\fb@frh=\dimen106
+\FrameRule=\dimen107
+\FrameSep=\dimen108
+)
+(/usr/share/texmf-texlive/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+) (./OSEMNassignment.aux)
+\openout1 = `OSEMNassignment.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count88
+\scratchdimen=\dimen109
+\scratchbox=\box26
+\nofMPsegments=\count89
+\nofMParguments=\count90
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count91
+\MPscratchDim=\dimen110
+\MPnumerator=\count92
+\everyMPtoPDFconversion=\toks16
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 75.
+
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Package color Info: Redefining color shadecolor on input line 96.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 98.
+
+Overfull \hbox (3.2331pt too wide) in paragraph at lines 106--106
+[][]\OT1/cmtt/m/n/10 url[]  []<-[] []'https://api.github.com/'[]               
+  []\OT1/cmtt/m/it/10 # the GitHub API[][] 
+ []
+
+
+Overfull \hbox (18.98296pt too wide) in paragraph at lines 107--107
+[][]\OT1/cmtt/m/n/10 path[] []<-[] []'search/repositories'[]                   
+  []\OT1/cmtt/m/it/10 # Repositories path[][] 
+ []
+
+
+Overfull \hbox (29.48286pt too wide) in paragraph at lines 108--108
+[][]\OT1/cmtt/m/n/10 searchJava[] []<-[] []'?q=language:Java'[]                
+  []\OT1/cmtt/m/it/10 # And language = Java[][] 
+ []
+
+
+Overfull \hbox (39.98277pt too wide) in paragraph at lines 109--109
+[][]\OT1/cmtt/m/n/10 searchJavaScript[] []<-[] []'?q=language:JavaScript'[]    
+  []\OT1/cmtt/m/it/10 # Language = JavaScript[][] 
+ []
+
+
+Overfull \hbox (279.74455pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ total_count            : int  1038032 1038032 1038032 
+1038032 1038032 1038032 1038032 1038032 1038032 1038032 ...[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ incomplete_results     : logi  FALSE FALSE FALSE FALSE
+ FALSE FALSE ...[] 
+ []
+
+
+Overfull \hbox (284.9945pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.id               : int  507775 2404027 2862290 4
+839957 1451060 18347476 2349728 5373551 1388245 10057936 ...[] 
+ []
+
+
+Overfull \hbox (232.49496pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.name             : chr  "elasticsearch" "storm" 
+"Android-Universal-Image-Loader" "SlidingMenu" ...[] 
+ []
+
+
+Overfull \hbox (447.74309pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.full_name        : chr  "elastic/elasticsearch" 
+"nathanmarz/storm" "nostra13/Android-Universal-Image-Loader" "jfeinstein10/Slid
+ingMenu" ...[] 
+ []
+
+
+Overfull \hbox (17.24684pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.owner            :'data.frame': 30 obs. of  17 v
+ariables:[] 
+ []
+
+
+Overfull \hbox (111.74602pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##   ..$ login              : chr  "elastic" "nathanmarz" "n
+ostra13" "jfeinstein10" ...[] 
+ []
+
+
+Overfull \hbox (242.99487pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##   ..$ id                 : int  6764390 131416 1223348 12
+69143 66577 1342004 11877067 509841 104009 82592 ...[] 
+ []
+
+
+Overfull \hbox (983.23842pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##   ..$ avatar_url         : chr  "https://avatars.githubus
+ercontent.com/u/6764390?v=3" "https://avatars.githubusercontent.com/u/131416?v=
+3" "https://avatars.githubusercontent.com/u/1223348?v=3" "https://avatars.githu
+busercontent.com/u/1269143?v=3" ...[] 
+ []
+
+
+Overfull \hbox (720.7407pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##   ..$ url                : chr  "https://api.github.com/u
+sers/elastic" "https://api.github.com/users/nathanmarz" "https://api.github.com
+/users/nostra13" "https://api.github.com/users/jfeinstein10" ...[] 
+ []
+
+
+Overfull \hbox (510.74254pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##   ..$ html_url           : chr  "https://github.com/elast
+ic" "https://github.com/nathanmarz" "https://github.com/nostra13" "https://gith
+ub.com/jfeinstein10" ...[] 
+ []
+
+
+Overfull \hbox (930.73888pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##   ..$ followers_url      : chr  "https://api.github.com/u
+sers/elastic/followers" "https://api.github.com/users/nathanmarz/followers" "ht
+tps://api.github.com/users/nostra13/followers" "https://api.github.com/users/jf
+einstein10/followers" ...[] 
+ []
+
+
+Overfull \hbox (1203.7365pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##   ..$ following_url      : chr  "https://api.github.com/u
+sers/elastic/following{/other_user}" "https://api.github.com/users/nathanmarz/f
+ollowing{/other_user}" "https://api.github.com/users/nostra13/following{/other_
+user}" "https://api.github.com/users/jfeinstein10/following{/other_user}" ...[]
+ 
+ []
+
+
+Overfull \hbox (1056.73778pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##   ..$ gists_url          : chr  "https://api.github.com/u
+sers/elastic/gists{/gist_id}" "https://api.github.com/users/nathanmarz/gists{/g
+ist_id}" "https://api.github.com/users/nostra13/gists{/gist_id}" "https://api.g
+ithub.com/users/jfeinstein10/gists{/gist_id}" ...[] 
+ []
+
+
+Overfull \hbox (1203.7365pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##   ..$ starred_url        : chr  "https://api.github.com/u
+sers/elastic/starred{/owner}{/repo}" "https://api.github.com/users/nathanmarz/s
+tarred{/owner}{/repo}" "https://api.github.com/users/nostra13/starred{/owner}{/
+repo}" "https://api.github.com/users/jfeinstein10/starred{/owner}{/repo}" ...[]
+ 
+ []
+
+
+Overfull \hbox (1014.73814pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##   ..$ subscriptions_url  : chr  "https://api.github.com/u
+sers/elastic/subscriptions" "https://api.github.com/users/nathanmarz/subscripti
+ons" "https://api.github.com/users/nostra13/subscriptions" "https://api.github.
+com/users/jfeinstein10/subscriptions" ...[] 
+ []
+
+
+Overfull \hbox (825.73979pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##   ..$ organizations_url  : chr  "https://api.github.com/u
+sers/elastic/orgs" "https://api.github.com/users/nathanmarz/orgs" "https://api.
+github.com/users/nostra13/orgs" "https://api.github.com/users/jfeinstein10/orgs
+" ...[] 
+ []
+
+
+Overfull \hbox (846.73961pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##   ..$ repos_url          : chr  "https://api.github.com/u
+sers/elastic/repos" "https://api.github.com/users/nathanmarz/repos" "https://ap
+i.github.com/users/nostra13/repos" "https://api.github.com/users/jfeinstein10/r
+epos" ...[] 
+ []
+
+
+Overfull \hbox (1077.7376pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##   ..$ events_url         : chr  "https://api.github.com/u
+sers/elastic/events{/privacy}" "https://api.github.com/users/nathanmarz/events{
+/privacy}" "https://api.github.com/users/nostra13/events{/privacy}" "https://ap
+i.github.com/users/jfeinstein10/events{/privacy}" ...[] 
+ []
+
+
+Overfull \hbox (1056.73778pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##   ..$ received_events_url: chr  "https://api.github.com/u
+sers/elastic/received_events" "https://api.github.com/users/nathanmarz/received
+_events" "https://api.github.com/users/nostra13/received_events" "https://api.g
+ithub.com/users/jfeinstein10/received_events" ...[] 
+ []
+
+
+Overfull \hbox (43.49661pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##   ..$ type               : chr  "Organization" "User" "Us
+er" "User" ...[] 
+ []
+
+
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##   ..$ site_admin         : logi  FALSE FALSE FALSE FALSE 
+FALSE FALSE ...[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.private          : logi  FALSE FALSE FALSE FALSE
+ FALSE FALSE ...[] 
+ []
+
+
+Overfull \hbox (846.73961pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.html_url         : chr  "https://github.com/elas
+tic/elasticsearch" "https://github.com/nathanmarz/storm" "https://github.com/no
+stra13/Android-Universal-Image-Loader" "https://github.com/jfeinstein10/Sliding
+Menu" ...[] 
+ []
+
+
+Overfull \hbox (1991.22963pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.description      : chr  "Open Source, Distribute
+d, RESTful Search Engine" "Distributed and fault-tolerant realtime computation:
+ stream processing, continuous computation, distributed RPC, and more" "Powerfu
+l and flexible library for loading, caching and displaying images on Android." 
+"An Android library that allows you to easily create applications with slide-in
+ menus. You may use it in your Android apps provi"| __truncated__ ...[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.fork             : logi  FALSE FALSE FALSE FALSE
+ FALSE FALSE ...[] 
+ []
+
+
+Overfull \hbox (1056.73778pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.url              : chr  "https://api.github.com/
+repos/elastic/elasticsearch" "https://api.github.com/repos/nathanmarz/storm" "h
+ttps://api.github.com/repos/nostra13/Android-Universal-Image-Loader" "https://a
+pi.github.com/repos/jfeinstein10/SlidingMenu" ...[] 
+ []
+
+
+Overfull \hbox (1182.73668pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.forks_url        : chr  "https://api.github.com/
+repos/elastic/elasticsearch/forks" "https://api.github.com/repos/nathanmarz/sto
+rm/forks" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader
+/forks" "https://api.github.com/repos/jfeinstein10/SlidingMenu/forks" ...[] 
+ []
+
+
+Overfull \hbox (1350.73521pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.keys_url         : chr  "https://api.github.com/
+repos/elastic/elasticsearch/keys{/key_id}" "https://api.github.com/repos/nathan
+marz/storm/keys{/key_id}" "https://api.github.com/repos/nostra13/Android-Univer
+sal-Image-Loader/keys{/key_id}" "https://api.github.com/repos/jfeinstein10/Slid
+ingMenu/keys{/key_id}" ...[] 
+ []
+
+
+Overfull \hbox (1665.73247pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.collaborators_url: chr  "https://api.github.com/
+repos/elastic/elasticsearch/collaborators{/collaborator}" "https://api.github.c
+om/repos/nathanmarz/storm/collaborators{/collaborator}" "https://api.github.com
+/repos/nostra13/Android-Universal-Image-Loader/collaborators{/collaborator}" "h
+ttps://api.github.com/repos/jfeinstein10/SlidingMenu/collaborators{/collaborato
+r}" ...[] 
+ []
+
+
+Overfull \hbox (1182.73668pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.teams_url        : chr  "https://api.github.com/
+repos/elastic/elasticsearch/teams" "https://api.github.com/repos/nathanmarz/sto
+rm/teams" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader
+/teams" "https://api.github.com/repos/jfeinstein10/SlidingMenu/teams" ...[] 
+ []
+
+
+Overfull \hbox (1182.73668pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.hooks_url        : chr  "https://api.github.com/
+repos/elastic/elasticsearch/hooks" "https://api.github.com/repos/nathanmarz/sto
+rm/hooks" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader
+/hooks" "https://api.github.com/repos/jfeinstein10/SlidingMenu/hooks" ...[] 
+ []
+
+
+Overfull \hbox (1539.73357pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.issue_events_url : chr  "https://api.github.com/
+repos/elastic/elasticsearch/issues/events{/number}" "https://api.github.com/rep
+os/nathanmarz/storm/issues/events{/number}" "https://api.github.com/repos/nostr
+a13/Android-Universal-Image-Loader/issues/events{/number}" "https://api.github.
+com/repos/jfeinstein10/SlidingMenu/issues/events{/number}" ...[] 
+ []
+
+
+Overfull \hbox (1203.7365pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.events_url       : chr  "https://api.github.com/
+repos/elastic/elasticsearch/events" "https://api.github.com/repos/nathanmarz/st
+orm/events" "https://api.github.com/repos/nostra13/Android-Universal-Image-Load
+er/events" "https://api.github.com/repos/jfeinstein10/SlidingMenu/events" ...[]
+ 
+ []
+
+
+Overfull \hbox (1413.73466pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.assignees_url    : chr  "https://api.github.com/
+repos/elastic/elasticsearch/assignees{/user}" "https://api.github.com/repos/nat
+hanmarz/storm/assignees{/user}" "https://api.github.com/repos/nostra13/Android-
+Universal-Image-Loader/assignees{/user}" "https://api.github.com/repos/jfeinste
+in10/SlidingMenu/assignees{/user}" ...[] 
+ []
+
+
+Overfull \hbox (1434.73448pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.branches_url     : chr  "https://api.github.com/
+repos/elastic/elasticsearch/branches{/branch}" "https://api.github.com/repos/na
+thanmarz/storm/branches{/branch}" "https://api.github.com/repos/nostra13/Androi
+d-Universal-Image-Loader/branches{/branch}" "https://api.github.com/repos/jfein
+stein10/SlidingMenu/branches{/branch}" ...[] 
+ []
+
+
+Overfull \hbox (1161.73686pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.tags_url         : chr  "https://api.github.com/
+repos/elastic/elasticsearch/tags" "https://api.github.com/repos/nathanmarz/stor
+m/tags" "https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/t
+ags" "https://api.github.com/repos/jfeinstein10/SlidingMenu/tags" ...[] 
+ []
+
+
+Overfull \hbox (1392.73485pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.blobs_url        : chr  "https://api.github.com/
+repos/elastic/elasticsearch/git/blobs{/sha}" "https://api.github.com/repos/nath
+anmarz/storm/git/blobs{/sha}" "https://api.github.com/repos/nostra13/Android-Un
+iversal-Image-Loader/git/blobs{/sha}" "https://api.github.com/repos/jfeinstein1
+0/SlidingMenu/git/blobs{/sha}" ...[] 
+ []
+
+
+Overfull \hbox (1371.73503pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.git_tags_url     : chr  "https://api.github.com/
+repos/elastic/elasticsearch/git/tags{/sha}" "https://api.github.com/repos/natha
+nmarz/storm/git/tags{/sha}" "https://api.github.com/repos/nostra13/Android-Univ
+ersal-Image-Loader/git/tags{/sha}" "https://api.github.com/repos/jfeinstein10/S
+lidingMenu/git/tags{/sha}" ...[] 
+ []
+
+
+Overfull \hbox (1371.73503pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.git_refs_url     : chr  "https://api.github.com/
+repos/elastic/elasticsearch/git/refs{/sha}" "https://api.github.com/repos/natha
+nmarz/storm/git/refs{/sha}" "https://api.github.com/repos/nostra13/Android-Univ
+ersal-Image-Loader/git/refs{/sha}" "https://api.github.com/repos/jfeinstein10/S
+lidingMenu/git/refs{/sha}" ...[] 
+ []
+
+
+Overfull \hbox (1392.73485pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.trees_url        : chr  "https://api.github.com/
+repos/elastic/elasticsearch/git/trees{/sha}" "https://api.github.com/repos/nath
+anmarz/storm/git/trees{/sha}" "https://api.github.com/repos/nostra13/Android-Un
+iversal-Image-Loader/git/trees{/sha}" "https://api.github.com/repos/jfeinstein1
+0/SlidingMenu/git/trees{/sha}" ...[] 
+ []
+
+
+Overfull \hbox (1371.73503pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.statuses_url     : chr  "https://api.github.com/
+repos/elastic/elasticsearch/statuses/{sha}" "https://api.github.com/repos/natha
+nmarz/storm/statuses/{sha}" "https://api.github.com/repos/nostra13/Android-Univ
+ersal-Image-Loader/statuses/{sha}" "https://api.github.com/repos/jfeinstein10/S
+lidingMenu/statuses/{sha}" ...[] 
+ []
+
+
+Overfull \hbox (1266.73595pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.languages_url    : chr  "https://api.github.com/
+repos/elastic/elasticsearch/languages" "https://api.github.com/repos/nathanmarz
+/storm/languages" "https://api.github.com/repos/nostra13/Android-Universal-Imag
+e-Loader/languages" "https://api.github.com/repos/jfeinstein10/SlidingMenu/lang
+uages" ...[] 
+ []
+
+
+Overfull \hbox (1287.73576pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.stargazers_url   : chr  "https://api.github.com/
+repos/elastic/elasticsearch/stargazers" "https://api.github.com/repos/nathanmar
+z/storm/stargazers" "https://api.github.com/repos/nostra13/Android-Universal-Im
+age-Loader/stargazers" "https://api.github.com/repos/jfeinstein10/SlidingMenu/s
+targazers" ...[] 
+ []
+
+
+Overfull \hbox (1329.7354pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.contributors_url : chr  "https://api.github.com/
+repos/elastic/elasticsearch/contributors" "https://api.github.com/repos/nathanm
+arz/storm/contributors" "https://api.github.com/repos/nostra13/Android-Universa
+l-Image-Loader/contributors" "https://api.github.com/repos/jfeinstein10/Sliding
+Menu/contributors" ...[] 
+ []
+
+
+Overfull \hbox (1308.73558pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.subscribers_url  : chr  "https://api.github.com/
+repos/elastic/elasticsearch/subscribers" "https://api.github.com/repos/nathanma
+rz/storm/subscribers" "https://api.github.com/repos/nostra13/Android-Universal-
+Image-Loader/subscribers" "https://api.github.com/repos/jfeinstein10/SlidingMen
+u/subscribers" ...[] 
+ []
+
+
+Overfull \hbox (1329.7354pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.subscription_url : chr  "https://api.github.com/
+repos/elastic/elasticsearch/subscription" "https://api.github.com/repos/nathanm
+arz/storm/subscription" "https://api.github.com/repos/nostra13/Android-Universa
+l-Image-Loader/subscription" "https://api.github.com/repos/jfeinstein10/Sliding
+Menu/subscription" ...[] 
+ []
+
+
+Overfull \hbox (1350.73521pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.commits_url      : chr  "https://api.github.com/
+repos/elastic/elasticsearch/commits{/sha}" "https://api.github.com/repos/nathan
+marz/storm/commits{/sha}" "https://api.github.com/repos/nostra13/Android-Univer
+sal-Image-Loader/commits{/sha}" "https://api.github.com/repos/jfeinstein10/Slid
+ingMenu/commits{/sha}" ...[] 
+ []
+
+
+Overfull \hbox (1434.73448pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.git_commits_url  : chr  "https://api.github.com/
+repos/elastic/elasticsearch/git/commits{/sha}" "https://api.github.com/repos/na
+thanmarz/storm/git/commits{/sha}" "https://api.github.com/repos/nostra13/Androi
+d-Universal-Image-Loader/git/commits{/sha}" "https://api.github.com/repos/jfein
+stein10/SlidingMenu/git/commits{/sha}" ...[] 
+ []
+
+
+Overfull \hbox (1434.73448pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.comments_url     : chr  "https://api.github.com/
+repos/elastic/elasticsearch/comments{/number}" "https://api.github.com/repos/na
+thanmarz/storm/comments{/number}" "https://api.github.com/repos/nostra13/Androi
+d-Universal-Image-Loader/comments{/number}" "https://api.github.com/repos/jfein
+stein10/SlidingMenu/comments{/number}" ...[] 
+ []
+
+
+Overfull \hbox (1581.7332pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.issue_comment_url: chr  "https://api.github.com/
+repos/elastic/elasticsearch/issues/comments{/number}" "https://api.github.com/r
+epos/nathanmarz/storm/issues/comments{/number}" "https://api.github.com/repos/n
+ostra13/Android-Universal-Image-Loader/issues/comments{/number}" "https://api.g
+ithub.com/repos/jfeinstein10/SlidingMenu/issues/comments{/number}" ...[] 
+ []
+
+
+Overfull \hbox (1413.73466pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.contents_url     : chr  "https://api.github.com/
+repos/elastic/elasticsearch/contents/{+path}" "https://api.github.com/repos/nat
+hanmarz/storm/contents/{+path}" "https://api.github.com/repos/nostra13/Android-
+Universal-Image-Loader/contents/{+path}" "https://api.github.com/repos/jfeinste
+in10/SlidingMenu/contents/{+path}" ...[] 
+ []
+
+
+Overfull \hbox (1560.73338pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.compare_url      : chr  "https://api.github.com/
+repos/elastic/elasticsearch/compare/{base}...{head}" "https://api.github.com/re
+pos/nathanmarz/storm/compare/{base}...{head}" "https://api.github.com/repos/nos
+tra13/Android-Universal-Image-Loader/compare/{base}...{head}" "https://api.gith
+ub.com/repos/jfeinstein10/SlidingMenu/compare/{base}...{head}" ...[] 
+ []
+
+
+Overfull \hbox (1203.7365pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.merges_url       : chr  "https://api.github.com/
+repos/elastic/elasticsearch/merges" "https://api.github.com/repos/nathanmarz/st
+orm/merges" "https://api.github.com/repos/nostra13/Android-Universal-Image-Load
+er/merges" "https://api.github.com/repos/jfeinstein10/SlidingMenu/merges" ...[]
+ 
+ []
+
+
+Overfull \hbox (1539.73357pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.archive_url      : chr  "https://api.github.com/
+repos/elastic/elasticsearch/{archive_format}{/ref}" "https://api.github.com/rep
+os/nathanmarz/storm/{archive_format}{/ref}" "https://api.github.com/repos/nostr
+a13/Android-Universal-Image-Loader/{archive_format}{/ref}" "https://api.github.
+com/repos/jfeinstein10/SlidingMenu/{archive_format}{/ref}" ...[] 
+ []
+
+
+Overfull \hbox (1266.73595pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.downloads_url    : chr  "https://api.github.com/
+repos/elastic/elasticsearch/downloads" "https://api.github.com/repos/nathanmarz
+/storm/downloads" "https://api.github.com/repos/nostra13/Android-Universal-Imag
+e-Loader/downloads" "https://api.github.com/repos/jfeinstein10/SlidingMenu/down
+loads" ...[] 
+ []
+
+
+Overfull \hbox (1392.73485pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.issues_url       : chr  "https://api.github.com/
+repos/elastic/elasticsearch/issues{/number}" "https://api.github.com/repos/nath
+anmarz/storm/issues{/number}" "https://api.github.com/repos/nostra13/Android-Un
+iversal-Image-Loader/issues{/number}" "https://api.github.com/repos/jfeinstein1
+0/SlidingMenu/issues{/number}" ...[] 
+ []
+
+
+Overfull \hbox (1371.73503pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.pulls_url        : chr  "https://api.github.com/
+repos/elastic/elasticsearch/pulls{/number}" "https://api.github.com/repos/natha
+nmarz/storm/pulls{/number}" "https://api.github.com/repos/nostra13/Android-Univ
+ersal-Image-Loader/pulls{/number}" "https://api.github.com/repos/jfeinstein10/S
+lidingMenu/pulls{/number}" ...[] 
+ []
+
+
+Overfull \hbox (1476.73412pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.milestones_url   : chr  "https://api.github.com/
+repos/elastic/elasticsearch/milestones{/number}" "https://api.github.com/repos/
+nathanmarz/storm/milestones{/number}" "https://api.github.com/repos/nostra13/An
+droid-Universal-Image-Loader/milestones{/number}" "https://api.github.com/repos
+/jfeinstein10/SlidingMenu/milestones{/number}" ...[] 
+ []
+
+
+Overfull \hbox (1896.73045pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.notifications_url: chr  "https://api.github.com/
+repos/elastic/elasticsearch/notifications{?since,all,participating}" "https://a
+pi.github.com/repos/nathanmarz/storm/notifications{?since,all,participating}" "
+https://api.github.com/repos/nostra13/Android-Universal-Image-Loader/notificati
+ons{?since,all,participating}" "https://api.github.com/repos/jfeinstein10/Slidi
+ngMenu/notifications{?since,all,participating}" ...[] 
+ []
+
+
+Overfull \hbox (1350.73521pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.labels_url       : chr  "https://api.github.com/
+repos/elastic/elasticsearch/labels{/name}" "https://api.github.com/repos/nathan
+marz/storm/labels{/name}" "https://api.github.com/repos/nostra13/Android-Univer
+sal-Image-Loader/labels{/name}" "https://api.github.com/repos/jfeinstein10/Slid
+ingMenu/labels{/name}" ...[] 
+ []
+
+
+Overfull \hbox (1350.73521pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.releases_url     : chr  "https://api.github.com/
+repos/elastic/elasticsearch/releases{/id}" "https://api.github.com/repos/nathan
+marz/storm/releases{/id}" "https://api.github.com/repos/nostra13/Android-Univer
+sal-Image-Loader/releases{/id}" "https://api.github.com/repos/jfeinstein10/Slid
+ingMenu/releases{/id}" ...[] 
+ []
+
+
+Overfull \hbox (342.744pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.created_at       : chr  "2010-02-08T13:20:56Z" "
+2011-09-17T07:55:13Z" "2011-11-27T18:48:23Z" "2012-06-30T05:14:23Z" ...[] 
+ []
+
+
+Overfull \hbox (342.744pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.updated_at       : chr  "2015-04-20T05:40:29Z" "
+2015-04-20T07:35:31Z" "2015-04-20T06:11:18Z" "2015-04-20T06:52:26Z" ...[] 
+ []
+
+
+Overfull \hbox (342.744pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.pushed_at        : chr  "2015-04-20T01:51:34Z" "
+2014-02-10T03:05:12Z" "2015-03-24T14:51:01Z" "2015-04-14T11:37:13Z" ...[] 
+ []
+
+
+Overfull \hbox (888.73924pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.git_url          : chr  "git://github.com/elasti
+c/elasticsearch.git" "git://github.com/nathanmarz/storm.git" "git://github.com/
+nostra13/Android-Universal-Image-Loader.git" "git://github.com/jfeinstein10/Sli
+dingMenu.git" ...[] 
+ []
+
+
+Overfull \hbox (846.73961pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.ssh_url          : chr  "git@github.com:elastic/
+elasticsearch.git" "git@github.com:nathanmarz/storm.git" "git@github.com:nostra
+13/Android-Universal-Image-Loader.git" "git@github.com:jfeinstein10/SlidingMenu
+.git" ...[] 
+ []
+
+
+Overfull \hbox (930.73888pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.clone_url        : chr  "https://github.com/elas
+tic/elasticsearch.git" "https://github.com/nathanmarz/storm.git" "https://githu
+b.com/nostra13/Android-Universal-Image-Loader.git" "https://github.com/jfeinste
+in10/SlidingMenu.git" ...[] 
+ []
+
+
+Overfull \hbox (846.73961pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.svn_url          : chr  "https://github.com/elas
+tic/elasticsearch" "https://github.com/nathanmarz/storm" "https://github.com/no
+stra13/Android-Universal-Image-Loader" "https://github.com/jfeinstein10/Sliding
+Menu" ...[] 
+ []
+
+
+Overfull \hbox (174.74547pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.homepage         : chr  "http://elasticsearch.or
+g" "http://storm-project.net" "" "" ...[] 
+ []
+
+
+Overfull \hbox (179.99542pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.size             : int  332036 27015 25179 28459
+ 18403 21445 15595 994629 5121 17359 ...[] 
+ []
+
+
+Overfull \hbox (127.49588pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.stargazers_count : int  10844 8576 8267 7431 675
+9 6448 6157 6132 5919 5690 ...[] 
+ []
+
+
+Overfull \hbox (127.49588pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.watchers_count   : int  10844 8576 8267 7431 675
+9 6448 6157 6132 5919 5690 ...[] 
+ []
+
+
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.language         : chr  "Java" "Java" "Java" "Ja
+va" ...[] 
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.has_issues       : logi  TRUE FALSE TRUE TRUE TR
+UE TRUE ...[] 
+ []
+
+
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.has_downloads    : logi  TRUE TRUE TRUE TRUE TRU
+E TRUE ...[] 
+ []
+
+
+Overfull \hbox (38.24666pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.has_wiki         : logi  FALSE TRUE TRUE TRUE FA
+LSE FALSE ...[] 
+ []
+
+
+Overfull \hbox (38.24666pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.has_pages        : logi  FALSE TRUE FALSE TRUE T
+RUE FALSE ...[] 
+ []
+
+
+Overfull \hbox (122.24593pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.forks_count      : int  3400 1724 3868 4418 3906
+ 2268 3034 3830 2876 1623 ...[] 
+ []
+
+
+Overfull \hbox (43.49661pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.open_issues_count: int  1113 51 169 267 87 30 16
+0 92 31 95 ...[] 
+ []
+
+
+Overfull \hbox (122.24593pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.forks            : int  3400 1724 3868 4418 3906
+ 2268 3034 3830 2876 1623 ...[] 
+ []
+
+
+Overfull \hbox (43.49661pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.open_issues      : int  1113 51 169 267 87 30 16
+0 92 31 95 ...[] 
+ []
+
+
+Overfull \hbox (127.49588pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.watchers         : int  10844 8576 8267 7431 675
+9 6448 6157 6132 5919 5690 ...[] 
+ []
+
+
+Overfull \hbox (95.99615pt too wide) in paragraph at lines 217--217
+[]\OT1/cmtt/m/n/10 ##  $ items.default_branch   : chr  "master" "moved-to-apach
+e" "master" "master" ...[] 
+ []
+
+
+Overfull \hbox (1865.23073pt too wide) in paragraph at lines 390--390
+[]\OT1/cmtt/m/n/10 ##  items.owner.login     items.owner.id    items.owner.avat
+ar_url  items.owner.gravatar_id   items.owner.url    items.owner.html_url  item
+s.owner.followers_url  items.owner.following_url  items.owner.gists_url  items.
+owner.starred_url  items.owner.subscriptions_url  items.owner.organizations_url
+  items.owner.repos_url  items.owner.events_url  items.owner.received_events_ur
+l   items.owner.type   items.owner.site_admin[] 
+ []
+
+
+Overfull \hbox (1424.23457pt too wide) in paragraph at lines 390--390
+[]\OT1/cmtt/m/n/10 ##  Length:30           Min.   :   66577    Length:30       
+    Length:30           Length:30           Length:30           Length:30      
+     Length:30           Length:30           Length:30           Length:30     
+      Length:30           Length:30           Length:30           Length:30    
+       Length:30           Mode :logical[] 
+ []
+
+
+Overfull \hbox (1397.9848pt too wide) in paragraph at lines 390--390
+[]\OT1/cmtt/m/n/10 ##  Class :character    1st Qu.:  110861    Class :character
+    Class :character    Class :character    Class :character    Class :characte
+r    Class :character    Class :character    Class :character    Class :charact
+er    Class :character    Class :character    Class :character    Class :charac
+ter    Class :character    FALSE:30[] 
+ []
+
+
+Overfull \hbox (1392.73485pt too wide) in paragraph at lines 390--390
+[]\OT1/cmtt/m/n/10 ##  Mode  :character    Median :  546094    Mode  :character
+    Mode  :character    Mode  :character    Mode  :character    Mode  :characte
+r    Mode  :character    Mode  :character    Mode  :character    Mode  :charact
+er    Mode  :character    Mode  :character    Mode  :character    Mode  :charac
+ter    Mode  :character    NA's :0[] 
+ []
+
+
+Overfull \hbox (1366.48508pt too wide) in paragraph at lines 390--390
+[]\OT1/cmtt/m/n/10 ##  NA                  Mean   : 1972236    NA              
+    NA                  NA                  NA                  NA             
+     NA                  NA                  NA                  NA            
+      NA                  NA                  NA                  NA           
+       NA                  NA[] 
+ []
+
+
+Overfull \hbox (1366.48508pt too wide) in paragraph at lines 390--390
+[]\OT1/cmtt/m/n/10 ##  NA                  3rd Qu.: 2596865    NA              
+    NA                  NA                  NA                  NA             
+     NA                  NA                  NA                  NA            
+      NA                  NA                  NA                  NA           
+       NA                  NA[] 
+ []
+
+
+Overfull \hbox (1366.48508pt too wide) in paragraph at lines 390--390
+[]\OT1/cmtt/m/n/10 ##  NA                  Max.   :11877067    NA              
+    NA                  NA                  NA                  NA             
+     NA                  NA                  NA                  NA            
+      NA                  NA                  NA                  NA           
+       NA                  NA[] 
+ []
+
+
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 390--390
+[]\OT1/cmtt/m/n/10 ##  items.private   items.html_url     items.description  it
+ems.fork[] 
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 390--390
+[]\OT1/cmtt/m/n/10 ##  Mode :logical   Length:30          Length:30          Mo
+de :logical[] 
+ []
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 390--390
+[]\OT1/cmtt/m/n/10 ##  FALSE:30        Class :character   Class :character   FA
+LSE:30[] 
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 390--390
+[]\OT1/cmtt/m/n/10 ##  items.contributors_url items.subscribers_url items.subsc
+ription_url[] 
+ []
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 390--390
+[]\OT1/cmtt/m/n/10 ##  items.has_issues items.has_downloads items.has_wiki  ite
+ms.has_pages[] 
+ []
+
+
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 390--390
+[]\OT1/cmtt/m/n/10 ##  Mode :logical    Mode:logical        Mode :logical   Mod
+e :logical[] 
+ []
+
+
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 390--390
+[]\OT1/cmtt/m/n/10 ##   items.forks     items.open_issues items.watchers  items
+.default_branch[] 
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 390--390
+[]\OT1/cmtt/m/n/10 ##  1st Qu.: 934.5   1st Qu.:  30.0    1st Qu.: 4106   Class
+ :character[] 
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 390--390
+[]\OT1/cmtt/m/n/10 ##  Median :1495.0   Median :  78.0    Median : 4959   Mode 
+ :character[] 
+ []
+
+
+Overfull \hbox (279.74455pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ total_count            : int  1291131 1291131 1291131 
+1291131 1291131 1291131 1291131 1291131 1291131 1291131 ...[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ incomplete_results     : logi  FALSE FALSE FALSE FALSE
+ FALSE FALSE ...[] 
+ []
+
+
+Overfull \hbox (248.24483pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.id               : int  460078 943149 211666 167
+174 486550 3214406 3065454 2935735 952189 1861458 ...[] 
+ []
+
+
+Overfull \hbox (38.24666pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.name             : chr  "angular.js" "d3" "node"
+ "jquery" ...[] 
+ []
+
+
+Overfull \hbox (200.99524pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.full_name        : chr  "angular/angular.js" "mb
+ostock/d3" "joyent/node" "jquery/jquery" ...[] 
+ []
+
+
+Overfull \hbox (17.24684pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.owner            :'data.frame': 30 obs. of  17 v
+ariables:[] 
+ []
+
+
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##   ..$ login              : chr  "angular" "mbostock" "joy
+ent" "jquery" ...[] 
+ []
+
+
+Overfull \hbox (200.99524pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##   ..$ id                 : int  139426 230541 10161 70142
+ 1136800 789528 83575 476009 4732 629429 ...[] 
+ []
+
+
+Overfull \hbox (956.98865pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##   ..$ avatar_url         : chr  "https://avatars.githubus
+ercontent.com/u/139426?v=3" "https://avatars.githubusercontent.com/u/230541?v=3
+" "https://avatars.githubusercontent.com/u/10161?v=3" "https://avatars.githubus
+ercontent.com/u/70142?v=3" ...[] 
+ []
+
+
+Overfull \hbox (668.24117pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##   ..$ url                : chr  "https://api.github.com/u
+sers/angular" "https://api.github.com/users/mbostock" "https://api.github.com/u
+sers/joyent" "https://api.github.com/users/jquery" ...[] 
+ []
+
+
+Overfull \hbox (458.243pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##   ..$ html_url           : chr  "https://github.com/angul
+ar" "https://github.com/mbostock" "https://github.com/joyent" "https://github.c
+om/jquery" ...[] 
+ []
+
+
+Overfull \hbox (878.23933pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##   ..$ followers_url      : chr  "https://api.github.com/u
+sers/angular/followers" "https://api.github.com/users/mbostock/followers" "http
+s://api.github.com/users/joyent/followers" "https://api.github.com/users/jquery
+/followers" ...[] 
+ []
+
+
+Overfull \hbox (1151.23695pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##   ..$ following_url      : chr  "https://api.github.com/u
+sers/angular/following{/other_user}" "https://api.github.com/users/mbostock/fol
+lowing{/other_user}" "https://api.github.com/users/joyent/following{/other_user
+}" "https://api.github.com/users/jquery/following{/other_user}" ...[] 
+ []
+
+
+Overfull \hbox (1004.23824pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##   ..$ gists_url          : chr  "https://api.github.com/u
+sers/angular/gists{/gist_id}" "https://api.github.com/users/mbostock/gists{/gis
+t_id}" "https://api.github.com/users/joyent/gists{/gist_id}" "https://api.githu
+b.com/users/jquery/gists{/gist_id}" ...[] 
+ []
+
+
+Overfull \hbox (1151.23695pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##   ..$ starred_url        : chr  "https://api.github.com/u
+sers/angular/starred{/owner}{/repo}" "https://api.github.com/users/mbostock/sta
+rred{/owner}{/repo}" "https://api.github.com/users/joyent/starred{/owner}{/repo
+}" "https://api.github.com/users/jquery/starred{/owner}{/repo}" ...[] 
+ []
+
+
+Overfull \hbox (962.2386pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##   ..$ subscriptions_url  : chr  "https://api.github.com/u
+sers/angular/subscriptions" "https://api.github.com/users/mbostock/subscription
+s" "https://api.github.com/users/joyent/subscriptions" "https://api.github.com/
+users/jquery/subscriptions" ...[] 
+ []
+
+
+Overfull \hbox (773.24025pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##   ..$ organizations_url  : chr  "https://api.github.com/u
+sers/angular/orgs" "https://api.github.com/users/mbostock/orgs" "https://api.gi
+thub.com/users/joyent/orgs" "https://api.github.com/users/jquery/orgs" ...[] 
+ []
+
+
+Overfull \hbox (794.24007pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##   ..$ repos_url          : chr  "https://api.github.com/u
+sers/angular/repos" "https://api.github.com/users/mbostock/repos" "https://api.
+github.com/users/joyent/repos" "https://api.github.com/users/jquery/repos" ...[
+] 
+ []
+
+
+Overfull \hbox (1025.23805pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##   ..$ events_url         : chr  "https://api.github.com/u
+sers/angular/events{/privacy}" "https://api.github.com/users/mbostock/events{/p
+rivacy}" "https://api.github.com/users/joyent/events{/privacy}" "https://api.gi
+thub.com/users/jquery/events{/privacy}" ...[] 
+ []
+
+
+Overfull \hbox (1004.23824pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##   ..$ received_events_url: chr  "https://api.github.com/u
+sers/angular/received_events" "https://api.github.com/users/mbostock/received_e
+vents" "https://api.github.com/users/joyent/received_events" "https://api.githu
+b.com/users/jquery/received_events" ...[] 
+ []
+
+
+Overfull \hbox (127.49588pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##   ..$ type               : chr  "Organization" "User" "Or
+ganization" "Organization" ...[] 
+ []
+
+
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##   ..$ site_admin         : logi  FALSE FALSE FALSE FALSE 
+FALSE FALSE ...[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.private          : logi  FALSE FALSE FALSE FALSE
+ FALSE FALSE ...[] 
+ []
+
+
+Overfull \hbox (599.99176pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.html_url         : chr  "https://github.com/angu
+lar/angular.js" "https://github.com/mbostock/d3" "https://github.com/joyent/nod
+e" "https://github.com/jquery/jquery" ...[] 
+ []
+
+
+Overfull \hbox (615.74162pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.description      : chr  "HTML enhanced for web a
+pps" "A JavaScript visualization library for HTML and SVG." "evented I/O for v8
+ javascript" "jQuery JavaScript Library" ...[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.fork             : logi  FALSE FALSE FALSE FALSE
+ FALSE FALSE ...[] 
+ []
+
+
+Overfull \hbox (809.98993pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.url              : chr  "https://api.github.com/
+repos/angular/angular.js" "https://api.github.com/repos/mbostock/d3" "https://a
+pi.github.com/repos/joyent/node" "https://api.github.com/repos/jquery/jquery" .
+..[] 
+ []
+
+
+Overfull \hbox (935.98883pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.forks_url        : chr  "https://api.github.com/
+repos/angular/angular.js/forks" "https://api.github.com/repos/mbostock/d3/forks
+" "https://api.github.com/repos/joyent/node/forks" "https://api.github.com/repo
+s/jquery/jquery/forks" ...[] 
+ []
+
+
+Overfull \hbox (1103.98737pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.keys_url         : chr  "https://api.github.com/
+repos/angular/angular.js/keys{/key_id}" "https://api.github.com/repos/mbostock/
+d3/keys{/key_id}" "https://api.github.com/repos/joyent/node/keys{/key_id}" "htt
+ps://api.github.com/repos/jquery/jquery/keys{/key_id}" ...[] 
+ []
+
+
+Overfull \hbox (1418.98462pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.collaborators_url: chr  "https://api.github.com/
+repos/angular/angular.js/collaborators{/collaborator}" "https://api.github.com/
+repos/mbostock/d3/collaborators{/collaborator}" "https://api.github.com/repos/j
+oyent/node/collaborators{/collaborator}" "https://api.github.com/repos/jquery/j
+query/collaborators{/collaborator}" ...[] 
+ []
+
+
+Overfull \hbox (935.98883pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.teams_url        : chr  "https://api.github.com/
+repos/angular/angular.js/teams" "https://api.github.com/repos/mbostock/d3/teams
+" "https://api.github.com/repos/joyent/node/teams" "https://api.github.com/repo
+s/jquery/jquery/teams" ...[] 
+ []
+
+
+Overfull \hbox (935.98883pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.hooks_url        : chr  "https://api.github.com/
+repos/angular/angular.js/hooks" "https://api.github.com/repos/mbostock/d3/hooks
+" "https://api.github.com/repos/joyent/node/hooks" "https://api.github.com/repo
+s/jquery/jquery/hooks" ...[] 
+ []
+
+
+Overfull \hbox (1292.98572pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.issue_events_url : chr  "https://api.github.com/
+repos/angular/angular.js/issues/events{/number}" "https://api.github.com/repos/
+mbostock/d3/issues/events{/number}" "https://api.github.com/repos/joyent/node/i
+ssues/events{/number}" "https://api.github.com/repos/jquery/jquery/issues/event
+s{/number}" ...[] 
+ []
+
+
+Overfull \hbox (956.98865pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.events_url       : chr  "https://api.github.com/
+repos/angular/angular.js/events" "https://api.github.com/repos/mbostock/d3/even
+ts" "https://api.github.com/repos/joyent/node/events" "https://api.github.com/r
+epos/jquery/jquery/events" ...[] 
+ []
+
+
+Overfull \hbox (1166.98682pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.assignees_url    : chr  "https://api.github.com/
+repos/angular/angular.js/assignees{/user}" "https://api.github.com/repos/mbosto
+ck/d3/assignees{/user}" "https://api.github.com/repos/joyent/node/assignees{/us
+er}" "https://api.github.com/repos/jquery/jquery/assignees{/user}" ...[] 
+ []
+
+
+Overfull \hbox (1187.98663pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.branches_url     : chr  "https://api.github.com/
+repos/angular/angular.js/branches{/branch}" "https://api.github.com/repos/mbost
+ock/d3/branches{/branch}" "https://api.github.com/repos/joyent/node/branches{/b
+ranch}" "https://api.github.com/repos/jquery/jquery/branches{/branch}" ...[] 
+ []
+
+
+Overfull \hbox (914.98901pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.tags_url         : chr  "https://api.github.com/
+repos/angular/angular.js/tags" "https://api.github.com/repos/mbostock/d3/tags" 
+"https://api.github.com/repos/joyent/node/tags" "https://api.github.com/repos/j
+query/jquery/tags" ...[] 
+ []
+
+
+Overfull \hbox (1145.987pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.blobs_url        : chr  "https://api.github.com/
+repos/angular/angular.js/git/blobs{/sha}" "https://api.github.com/repos/mbostoc
+k/d3/git/blobs{/sha}" "https://api.github.com/repos/joyent/node/git/blobs{/sha}
+" "https://api.github.com/repos/jquery/jquery/git/blobs{/sha}" ...[] 
+ []
+
+
+Overfull \hbox (1124.98718pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.git_tags_url     : chr  "https://api.github.com/
+repos/angular/angular.js/git/tags{/sha}" "https://api.github.com/repos/mbostock
+/d3/git/tags{/sha}" "https://api.github.com/repos/joyent/node/git/tags{/sha}" "
+https://api.github.com/repos/jquery/jquery/git/tags{/sha}" ...[] 
+ []
+
+
+Overfull \hbox (1124.98718pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.git_refs_url     : chr  "https://api.github.com/
+repos/angular/angular.js/git/refs{/sha}" "https://api.github.com/repos/mbostock
+/d3/git/refs{/sha}" "https://api.github.com/repos/joyent/node/git/refs{/sha}" "
+https://api.github.com/repos/jquery/jquery/git/refs{/sha}" ...[] 
+ []
+
+
+Overfull \hbox (1145.987pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.trees_url        : chr  "https://api.github.com/
+repos/angular/angular.js/git/trees{/sha}" "https://api.github.com/repos/mbostoc
+k/d3/git/trees{/sha}" "https://api.github.com/repos/joyent/node/git/trees{/sha}
+" "https://api.github.com/repos/jquery/jquery/git/trees{/sha}" ...[] 
+ []
+
+
+Overfull \hbox (1124.98718pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.statuses_url     : chr  "https://api.github.com/
+repos/angular/angular.js/statuses/{sha}" "https://api.github.com/repos/mbostock
+/d3/statuses/{sha}" "https://api.github.com/repos/joyent/node/statuses/{sha}" "
+https://api.github.com/repos/jquery/jquery/statuses/{sha}" ...[] 
+ []
+
+
+Overfull \hbox (1019.9881pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.languages_url    : chr  "https://api.github.com/
+repos/angular/angular.js/languages" "https://api.github.com/repos/mbostock/d3/l
+anguages" "https://api.github.com/repos/joyent/node/languages" "https://api.git
+hub.com/repos/jquery/jquery/languages" ...[] 
+ []
+
+
+Overfull \hbox (1040.98792pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.stargazers_url   : chr  "https://api.github.com/
+repos/angular/angular.js/stargazers" "https://api.github.com/repos/mbostock/d3/
+stargazers" "https://api.github.com/repos/joyent/node/stargazers" "https://api.
+github.com/repos/jquery/jquery/stargazers" ...[] 
+ []
+
+
+Overfull \hbox (1082.98755pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.contributors_url : chr  "https://api.github.com/
+repos/angular/angular.js/contributors" "https://api.github.com/repos/mbostock/d
+3/contributors" "https://api.github.com/repos/joyent/node/contributors" "https:
+//api.github.com/repos/jquery/jquery/contributors" ...[] 
+ []
+
+
+Overfull \hbox (1061.98773pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.subscribers_url  : chr  "https://api.github.com/
+repos/angular/angular.js/subscribers" "https://api.github.com/repos/mbostock/d3
+/subscribers" "https://api.github.com/repos/joyent/node/subscribers" "https://a
+pi.github.com/repos/jquery/jquery/subscribers" ...[] 
+ []
+
+
+Overfull \hbox (1082.98755pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.subscription_url : chr  "https://api.github.com/
+repos/angular/angular.js/subscription" "https://api.github.com/repos/mbostock/d
+3/subscription" "https://api.github.com/repos/joyent/node/subscription" "https:
+//api.github.com/repos/jquery/jquery/subscription" ...[] 
+ []
+
+
+Overfull \hbox (1103.98737pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.commits_url      : chr  "https://api.github.com/
+repos/angular/angular.js/commits{/sha}" "https://api.github.com/repos/mbostock/
+d3/commits{/sha}" "https://api.github.com/repos/joyent/node/commits{/sha}" "htt
+ps://api.github.com/repos/jquery/jquery/commits{/sha}" ...[] 
+ []
+
+
+Overfull \hbox (1187.98663pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.git_commits_url  : chr  "https://api.github.com/
+repos/angular/angular.js/git/commits{/sha}" "https://api.github.com/repos/mbost
+ock/d3/git/commits{/sha}" "https://api.github.com/repos/joyent/node/git/commits
+{/sha}" "https://api.github.com/repos/jquery/jquery/git/commits{/sha}" ...[] 
+ []
+
+
+Overfull \hbox (1187.98663pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.comments_url     : chr  "https://api.github.com/
+repos/angular/angular.js/comments{/number}" "https://api.github.com/repos/mbost
+ock/d3/comments{/number}" "https://api.github.com/repos/joyent/node/comments{/n
+umber}" "https://api.github.com/repos/jquery/jquery/comments{/number}" ...[] 
+ []
+
+
+Overfull \hbox (1334.98535pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.issue_comment_url: chr  "https://api.github.com/
+repos/angular/angular.js/issues/comments{/number}" "https://api.github.com/repo
+s/mbostock/d3/issues/comments{/number}" "https://api.github.com/repos/joyent/no
+de/issues/comments{/number}" "https://api.github.com/repos/jquery/jquery/issues
+/comments{/number}" ...[] 
+ []
+
+
+Overfull \hbox (1166.98682pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.contents_url     : chr  "https://api.github.com/
+repos/angular/angular.js/contents/{+path}" "https://api.github.com/repos/mbosto
+ck/d3/contents/{+path}" "https://api.github.com/repos/joyent/node/contents/{+pa
+th}" "https://api.github.com/repos/jquery/jquery/contents/{+path}" ...[] 
+ []
+
+
+Overfull \hbox (1313.98553pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.compare_url      : chr  "https://api.github.com/
+repos/angular/angular.js/compare/{base}...{head}" "https://api.github.com/repos
+/mbostock/d3/compare/{base}...{head}" "https://api.github.com/repos/joyent/node
+/compare/{base}...{head}" "https://api.github.com/repos/jquery/jquery/compare/{
+base}...{head}" ...[] 
+ []
+
+
+Overfull \hbox (956.98865pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.merges_url       : chr  "https://api.github.com/
+repos/angular/angular.js/merges" "https://api.github.com/repos/mbostock/d3/merg
+es" "https://api.github.com/repos/joyent/node/merges" "https://api.github.com/r
+epos/jquery/jquery/merges" ...[] 
+ []
+
+
+Overfull \hbox (1292.98572pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.archive_url      : chr  "https://api.github.com/
+repos/angular/angular.js/{archive_format}{/ref}" "https://api.github.com/repos/
+mbostock/d3/{archive_format}{/ref}" "https://api.github.com/repos/joyent/node/{
+archive_format}{/ref}" "https://api.github.com/repos/jquery/jquery/{archive_for
+mat}{/ref}" ...[] 
+ []
+
+
+Overfull \hbox (1019.9881pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.downloads_url    : chr  "https://api.github.com/
+repos/angular/angular.js/downloads" "https://api.github.com/repos/mbostock/d3/d
+ownloads" "https://api.github.com/repos/joyent/node/downloads" "https://api.git
+hub.com/repos/jquery/jquery/downloads" ...[] 
+ []
+
+
+Overfull \hbox (1145.987pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.issues_url       : chr  "https://api.github.com/
+repos/angular/angular.js/issues{/number}" "https://api.github.com/repos/mbostoc
+k/d3/issues{/number}" "https://api.github.com/repos/joyent/node/issues{/number}
+" "https://api.github.com/repos/jquery/jquery/issues{/number}" ...[] 
+ []
+
+
+Overfull \hbox (1124.98718pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.pulls_url        : chr  "https://api.github.com/
+repos/angular/angular.js/pulls{/number}" "https://api.github.com/repos/mbostock
+/d3/pulls{/number}" "https://api.github.com/repos/joyent/node/pulls{/number}" "
+https://api.github.com/repos/jquery/jquery/pulls{/number}" ...[] 
+ []
+
+
+Overfull \hbox (1229.98627pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.milestones_url   : chr  "https://api.github.com/
+repos/angular/angular.js/milestones{/number}" "https://api.github.com/repos/mbo
+stock/d3/milestones{/number}" "https://api.github.com/repos/joyent/node/milesto
+nes{/number}" "https://api.github.com/repos/jquery/jquery/milestones{/number}" 
+...[] 
+ []
+
+
+Overfull \hbox (1649.9826pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.notifications_url: chr  "https://api.github.com/
+repos/angular/angular.js/notifications{?since,all,participating}" "https://api.
+github.com/repos/mbostock/d3/notifications{?since,all,participating}" "https://
+api.github.com/repos/joyent/node/notifications{?since,all,participating}" "http
+s://api.github.com/repos/jquery/jquery/notifications{?since,all,participating}"
+ ...[] 
+ []
+
+
+Overfull \hbox (1103.98737pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.labels_url       : chr  "https://api.github.com/
+repos/angular/angular.js/labels{/name}" "https://api.github.com/repos/mbostock/
+d3/labels{/name}" "https://api.github.com/repos/joyent/node/labels{/name}" "htt
+ps://api.github.com/repos/jquery/jquery/labels{/name}" ...[] 
+ []
+
+
+Overfull \hbox (1103.98737pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.releases_url     : chr  "https://api.github.com/
+repos/angular/angular.js/releases{/id}" "https://api.github.com/repos/mbostock/
+d3/releases{/id}" "https://api.github.com/repos/joyent/node/releases{/id}" "htt
+ps://api.github.com/repos/jquery/jquery/releases{/id}" ...[] 
+ []
+
+
+Overfull \hbox (342.744pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.created_at       : chr  "2010-01-06T00:34:37Z" "
+2010-09-27T17:22:42Z" "2009-05-27T16:29:46Z" "2009-04-03T15:20:14Z" ...[] 
+ []
+
+
+Overfull \hbox (342.744pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.updated_at       : chr  "2015-04-20T07:38:01Z" "
+2015-04-20T07:32:04Z" "2015-04-20T07:21:56Z" "2015-04-20T06:38:29Z" ...[] 
+ []
+
+
+Overfull \hbox (342.744pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.pushed_at        : chr  "2015-04-19T17:39:10Z" "
+2015-04-18T00:03:11Z" "2015-04-17T08:36:26Z" "2015-04-17T16:38:06Z" ...[] 
+ []
+
+
+Overfull \hbox (641.9914pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.git_url          : chr  "git://github.com/angula
+r/angular.js.git" "git://github.com/mbostock/d3.git" "git://github.com/joyent/n
+ode.git" "git://github.com/jquery/jquery.git" ...[] 
+ []
+
+
+Overfull \hbox (599.99176pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.ssh_url          : chr  "git@github.com:angular/
+angular.js.git" "git@github.com:mbostock/d3.git" "git@github.com:joyent/node.gi
+t" "git@github.com:jquery/jquery.git" ...[] 
+ []
+
+
+Overfull \hbox (683.99103pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.clone_url        : chr  "https://github.com/angu
+lar/angular.js.git" "https://github.com/mbostock/d3.git" "https://github.com/jo
+yent/node.git" "https://github.com/jquery/jquery.git" ...[] 
+ []
+
+
+Overfull \hbox (599.99176pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.svn_url          : chr  "https://github.com/angu
+lar/angular.js" "https://github.com/mbostock/d3" "https://github.com/joyent/nod
+e" "https://github.com/jquery/jquery" ...[] 
+ []
+
+
+Overfull \hbox (295.49442pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.homepage         : chr  "http://angularjs.org" "
+http://d3js.org" "http://nodejs.org/" "http://jquery.com/" ...[] 
+ []
+
+
+Overfull \hbox (190.49533pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.size             : int  236576 73722 344103 4042
+3 66334 172690 2276 326021 47145 80738 ...[] 
+ []
+
+
+Overfull \hbox (174.74547pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.stargazers_count : int  37621 36846 35785 34147 
+29519 24313 23880 21811 21457 20714 ...[] 
+ []
+
+
+Overfull \hbox (174.74547pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.watchers_count   : int  37621 36846 35785 34147 
+29519 24313 23880 21811 21457 20714 ...[] 
+ []
+
+
+Overfull \hbox (132.74583pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.language         : chr  "JavaScript" "JavaScript
+" "JavaScript" "JavaScript" ...[] 
+ []
+
+
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.has_issues       : logi  TRUE TRUE TRUE TRUE TRU
+E TRUE ...[] 
+ []
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.has_downloads    : logi  TRUE TRUE FALSE FALSE T
+RUE TRUE ...[] 
+ []
+
+
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.has_wiki         : logi  TRUE TRUE TRUE TRUE TRU
+E TRUE ...[] 
+ []
+
+
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.has_pages        : logi  FALSE TRUE FALSE FALSE 
+FALSE FALSE ...[] 
+ []
+
+
+Overfull \hbox (127.49588pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.forks_count      : int  15680 9352 7993 8266 760
+0 2752 5210 4511 4803 6265 ...[] 
+ []
+
+
+Overfull \hbox (74.99634pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.open_issues_count: int  1197 244 1217 119 11 530
+ 185 1241 32 124 ...[] 
+ []
+
+
+Overfull \hbox (127.49588pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.forks            : int  15680 9352 7993 8266 760
+0 2752 5210 4511 4803 6265 ...[] 
+ []
+
+
+Overfull \hbox (74.99634pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.open_issues      : int  1197 244 1217 119 11 530
+ 185 1241 32 124 ...[] 
+ []
+
+
+Overfull \hbox (174.74547pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.watchers         : int  37621 36846 35785 34147 
+29519 24313 23880 21811 21457 20714 ...[] 
+ []
+
+
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/10 ##  $ items.default_branch   : chr  "master" "master" "maste
+r" "master" ...[] 
+ []
+
+
+Overfull \hbox (1865.23073pt too wide) in paragraph at lines 662--662
+[]\OT1/cmtt/m/n/10 ##  items.owner.login     items.owner.id    items.owner.avat
+ar_url  items.owner.gravatar_id   items.owner.url    items.owner.html_url  item
+s.owner.followers_url  items.owner.following_url  items.owner.gists_url  items.
+owner.starred_url  items.owner.subscriptions_url  items.owner.organizations_url
+  items.owner.repos_url  items.owner.events_url  items.owner.received_events_ur
+l   items.owner.type   items.owner.site_admin[] 
+ []
+
+
+Overfull \hbox (1424.23457pt too wide) in paragraph at lines 662--662
+[]\OT1/cmtt/m/n/10 ##  Length:30           Min.   :   4732     Length:30       
+    Length:30           Length:30           Length:30           Length:30      
+     Length:30           Length:30           Length:30           Length:30     
+      Length:30           Length:30           Length:30           Length:30    
+       Length:30           Mode :logical[] 
+ []
+
+
+Overfull \hbox (1397.9848pt too wide) in paragraph at lines 662--662
+[]\OT1/cmtt/m/n/10 ##  Class :character    1st Qu.:  86953     Class :character
+    Class :character    Class :character    Class :character    Class :characte
+r    Class :character    Class :character    Class :character    Class :charact
+er    Class :character    Class :character    Class :character    Class :charac
+ter    Class :character    FALSE:30[] 
+ []
+
+
+Overfull \hbox (1392.73485pt too wide) in paragraph at lines 662--662
+[]\OT1/cmtt/m/n/10 ##  Mode  :character    Median : 539310     Mode  :character
+    Mode  :character    Mode  :character    Mode  :character    Mode  :characte
+r    Mode  :character    Mode  :character    Mode  :character    Mode  :charact
+er    Mode  :character    Mode  :character    Mode  :character    Mode  :charac
+ter    Mode  :character    NA's :0[] 
+ []
+
+
+Overfull \hbox (1366.48508pt too wide) in paragraph at lines 662--662
+[]\OT1/cmtt/m/n/10 ##  NA                  Mean   :1393905     NA              
+    NA                  NA                  NA                  NA             
+     NA                  NA                  NA                  NA            
+      NA                  NA                  NA                  NA           
+       NA                  NA[] 
+ []
+
+
+Overfull \hbox (1366.48508pt too wide) in paragraph at lines 662--662
+[]\OT1/cmtt/m/n/10 ##  NA                  3rd Qu.:1406879     NA              
+    NA                  NA                  NA                  NA             
+     NA                  NA                  NA                  NA            
+      NA                  NA                  NA                  NA           
+       NA                  NA[] 
+ []
+
+
+Overfull \hbox (1366.48508pt too wide) in paragraph at lines 662--662
+[]\OT1/cmtt/m/n/10 ##  NA                  Max.   :8077542     NA              
+    NA                  NA                  NA                  NA             
+     NA                  NA                  NA                  NA            
+      NA                  NA                  NA                  NA           
+       NA                  NA[] 
+ []
+
+
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 662--662
+[]\OT1/cmtt/m/n/10 ##  items.private   items.html_url     items.description  it
+ems.fork[] 
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 662--662
+[]\OT1/cmtt/m/n/10 ##  Mode :logical   Length:30          Length:30          Mo
+de :logical[] 
+ []
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 662--662
+[]\OT1/cmtt/m/n/10 ##  FALSE:30        Class :character   Class :character   FA
+LSE:30[] 
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 662--662
+[]\OT1/cmtt/m/n/10 ##  items.contributors_url items.subscribers_url items.subsc
+ription_url[] 
+ []
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 662--662
+[]\OT1/cmtt/m/n/10 ##  items.has_issues items.has_downloads items.has_wiki  ite
+ms.has_pages[] 
+ []
+
+
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 662--662
+[]\OT1/cmtt/m/n/10 ##  Mode :logical    Mode :logical       Mode :logical   Mod
+e :logical[] 
+ []
+
+
+Overfull \hbox (43.49661pt too wide) in paragraph at lines 662--662
+[]\OT1/cmtt/m/n/10 ##   items.forks    items.open_issues items.watchers  items.
+default_branch[] 
+ []
+
+
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 662--662
+[]\OT1/cmtt/m/n/10 ##  1st Qu.: 2275   1st Qu.:  59.75   1st Qu.:14400   Class 
+:character[] 
+ []
+
+
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 662--662
+[]\OT1/cmtt/m/n/10 ##  Median : 3231   Median : 186.50   Median :17890   Mode  
+:character[] 
+ []
+
+[2] [3]
+Underfull \vbox (badness 10000) detected at line 663
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 663
+ []
+
+[4] [5]
+Underfull \vbox (badness 10000) detected at line 663
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 663
+ []
+
+[6]
+Underfull \vbox (badness 10000) detected at line 663
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 663
+ []
+
+[7]
+Underfull \vbox (badness 10000) detected at line 663
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 663
+ []
+
+[8] [9]
+Underfull \vbox (badness 10000) detected at line 663
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 663
+ []
+
+[10] [11]
+Underfull \vbox (badness 10000) detected at line 663
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 663
+ []
+
+[12]
+Underfull \vbox (badness 10000) detected at line 663
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 663
+ []
+
+[13]
+Underfull \vbox (badness 10000) detected at line 663
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 663
+ []
+
+[14]
+Package color Info: Redefining color shadecolor on input line 671.
+Package color Info: Redefining color shadecolor on input line 700.
+
+Overfull \hbox (69.74638pt too wide) in paragraph at lines 703--703
+[][]\OT1/cmtt/m/n/10 ggplot2[][]::[][]ggplot[][](graph_data_frame,[][]aes[][]([
+][]x[][]=language,[][]y[][]=repositories,[][]fill[][]=language))[][]+[][] 
+ []
+
+<figure/chunk3-1.pdf, id=52, 505.89pt x 505.89pt>
+File: figure/chunk3-1.pdf Graphic file (type pdf)
+ <use figure/chunk3-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 707--708
+[][] 
+ []
+
+[15] [16 <./figure/chunk3-1.pdf>] (./OSEMNassignment.aux) ) 
+Here is how much of TeX's memory you used:
+ 1029 strings out of 495061
+ 13117 string characters out of 1182622
+ 226532 words of memory out of 3000000
+ 4242 multiletter control sequences out of 15000+50000
+ 5494 words of font info for 21 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 27i,6n,39p,541b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmitt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
+s/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on OSEMNassignment.pdf (16 pages, 116537 bytes).
+PDF statistics:
+ 85 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+
